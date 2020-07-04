@@ -160,10 +160,6 @@ footer{
     color: rgb(255, 255, 255);
 }
 
-#yourGuesses{
-    display: none;
-}
-
 #forfun{
     margin: auto;
     text-align: center;
@@ -171,8 +167,8 @@ footer{
     background-color: rgb(255, 255, 255);
 }
 
+/* new game code */
 #guessLabel{
-    display: block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.75rem;
     font-weight: bold;
@@ -188,6 +184,7 @@ footer{
 }
 
 #numOfGuesses{
+    display: inline-block;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(100, 0, 0);
     font-size: 1.5rem;
@@ -196,7 +193,6 @@ footer{
 }
 
 #forfun input[type="submit"]{
-    display: inline-block;
     background-color: rgb(30, 54, 92);
     border: none;
     color: rgb(255, 255, 255);
@@ -215,7 +211,12 @@ footer{
     background-color: rgb(100, 100, 100);
 }
 
+#submitGuess{
+    display: none;
+}
+
 #output, #guess{
+    display: none;
     color: rgb(30, 54, 92);
     width: 75%;
     padding: 1%;

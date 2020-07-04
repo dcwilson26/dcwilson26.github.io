@@ -1,7 +1,3 @@
-window.onload = function(){
-    newGame();
-}
-
 var m = window.matchMedia("(min-width:768px)")
 var l = window.matchMedia("(orientation:landscape")
 m.addListener(navLinks)
@@ -34,12 +30,14 @@ function yourGuess(){
             if(numOfGuesses == 1){
                 document.getElementById("result").innerHTML = "WOW! It took you only ";
                 document.getElementById("numOfGuesses").innerHTML = numOfGuesses+" guess.";
+                document.getElementById("guessLabel").style.display = "none";
                 document.getElementById("guess").style.display = "none";
                 document.getElementById("submitGuess").style.display = "none";          
             }
             else{
                 document.getElementById("result").innerHTML = "Good job! It took you ";
                 document.getElementById("numOfGuesses").innerHTML = numOfGuesses+" guesses.";
+                document.getElementById("guessLabel").style.display = "none";
                 document.getElementById("guess").style.display = "none";
                 document.getElementById("submitGuess").style.display = "none";                
             }
@@ -61,11 +59,14 @@ function yourGuess(){
 }
     
 function newGame(){
+    document.getElementById("guessLabel").style.display = "inline-block";
+    document.getElementById("guessLabel").innerHTML = "Guess a number between 1 and 100";
     document.getElementById("guess").value = "";
     document.getElementById("result").innerHTML = "Number of guesses: ";
     document.getElementById("numOfGuesses").innerHTML = 0;
     document.getElementById("guess").style.display = "inline";
     document.getElementById("submitGuess").style.display = "inline";
+    document.getElementById("output").style.display = "inline-block";
     var guesses = document.getElementById("output");
     guesses.value = "";
     numToGuess = Math.floor(Math.random()*100) + 1;

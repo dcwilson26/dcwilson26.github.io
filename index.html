@@ -167,9 +167,9 @@
                         to try to guess the correct number. After each guess you will be told if the correct number is higher or lower. Good luck!       
                     </p>
                     <div id="game">    
-                        <label for="guess" id="guessLabel">Guess a number between 1 and 100:</label><br>
+                        <label for="guess" id="guessLabel">Click New Game to start.</label><br>
                         <input type="number" id="guess" value=""><br>
-                        <input type="submit" id="submitGuess" onclick="yourGuess()" value="Submit Guess">
+                        <div id="submitGuess"><input type="submit" id="yourGuess" onclick="yourGuess()" value="Submit Guess"></div>
                         <input type="submit" id="newGame" onclick="newGame(true)" value="New Game"><br><br>
                         <span id="result"></span><span id="numOfGuesses"></span><br><br>
                         <textarea readonly id="output" name="output" rows="3" cols="40"></textarea>
