@@ -61,8 +61,8 @@
                         <img src="images/DannyBeach.JPG" class="example-image" alt="Santa Monica 2014">
                     </a>
                 </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <a class="prev" aria-label="Previous Slide" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" aria-label="Next Slide" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <br>
   
@@ -171,6 +171,7 @@
                         <input type="submit" id="submitGuess" onclick="yourGuess()" value="Submit Guess">
                         <input type="submit" id="newGame" onclick="newGame(true)" value="New Game"><br><br>
                         <span id="result"></span><span id="numOfGuesses"></span><br><br>
+                        <label for="output" id="yourGuesses">Your Guesses</label>
                         <textarea readonly id="output" name="output" rows="3" cols="40"></textarea>
                     </div>
         </section>
