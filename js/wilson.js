@@ -1,3 +1,14 @@
+window.onload=function(){
+    var input = document.getElementById("guess");
+    input.addEventListener("keyup", function(event){
+        if(event.keyCode === 13){
+            event.preventDefault();
+            document.getElementById("submitGuess").onclick();
+    
+        }
+    })
+}
+
 var m = window.matchMedia("(min-width:768px)")
 var l = window.matchMedia("(orientation:landscape")
 m.addListener(navLinks)
