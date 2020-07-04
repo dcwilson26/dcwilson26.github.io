@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Wilson Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/wilson.css">
+    <script src="js/wilson.js"></script>
+</head>
+<body>
+    <header class="topnav">
+            <h1>Daniel Wilson</h1>
+                <nav id="myLinks">
+                    <a href="#about" onclick="hamburger(this)"><img class="navIcon" alt="About Icon" src="images/about.png">About Me</a>
+                    <a href="#experience" onclick="hamburger(this)"><img class="navIcon" alt="Experience Icon" src="images/experience.png">Experience</a>
+                    <a href="#education" onclick="hamburger(this)"><img class="navIcon" alt="Education Icon" src="images/education.png">Education</a>
+                    <a href="#skills" onclick="hamburger(this)"><img class="navIcon" alt="Skills Icon" src="images/skills.png">Skills</a>
+                    <a href="#forfun" onclick="hamburger(this)"><img class="navIcon" alt="For Fun Icon" src="images/forfun.png">For Fun!</a>
+                    <a href="#contact" onclick="hamburger(this)"><img class="navIcon" alt="Contact Icon" src="images/contact.png">Contact</a>
+                </nav>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
+    </header>
+    <main>
+        <section id="about">
+            <div class="slideshow-container">
+                <div class="mySlides fade" id="activeSlide">
+                    <div class="numbertext">1 / 6</div>
+                    <a class="example-image-link" href="images/Danny.jpg" data-lightbox="example-set" data-title="Las Vegas 2020">
+                        <img src="images/Danny.jpg" class="example-image" alt="Las Vegas 2020">
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <a class="example-image-link" href="images/DannyNY1.JPG" data-lightbox="example-set" data-title="New York City 2019">
+                        <img src="images/DannyNY1.jpg" class="example-image" alt="New York City 2019">
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <a class="example-image-link" href="images/DannyNY2.JPG" data-lightbox="example-set" data-title="Empire State Building 2019">
+                        <img src="images/DannyNY2.jpg" class="example-image" alt="Empire State Building 2019">
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <a class="example-image-link" href="images/DannyNY3.JPG" data-lightbox="example-set" data-title="Battery Park 2019">
+                        <img src="images/DannyNY3.jpg" class="example-image" alt="Battery Park 2019">
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <a class="example-image-link" href="images/DannyDisney.JPG" data-lightbox="example-set" data-title="Disneyland 2017">
+                        <img src="images/DannyDisney.jpg" class="example-image" alt="Disneyland 2017">
+                    </a>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <a class="example-image-link" href="images/DannyBeach.JPG" data-lightbox="example-set" data-title="Santa Monica 2014">
+                        <img src="images/DannyBeach.jpg" class="example-image" alt="Santa Monica 2014">
+                    </a>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+  
+            <div id="dotContainer">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <h2>Hello, I'm Daniel!</h2>
+                <p>In 2020, due to closures and restrictions caused by the Covid-19 global pandemic, 
+                    I was sadly let go from my job as a poker dealer in Las Vegas, Nevada, USA. However, 
+                    instead of waiting and hoping that my previous job would eventually come calling, 
+                    I decided to use my free time to learn new skills online. I had always enjoyed 
+                    working with computers so I began learning about business staples like Excel and PowerPoint. 
+                    Eventually, my odyssey took me into the realm of web design and coding which culminated in 
+                    a capstone project to design my own webpage; the very page you are visiting right now! 
+                </p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2><hr>
+            <a class="example-image-link" href="images/RedRock.jpg" data-lightbox="example-1" data-title="Red Rock Casino Resort & Spa, Las Vegas, NV">
+                <img src="images/RedRock.jpg" class="example-image" alt="Red Rock Casino Resort & Spa">
+            </a>
+            <h3>Red Rock Casino Resort & Spa</h3>
+            <div class="year">2006-2020</div>
+                <ul>            
+                    <li>Supervisor</li>
+                    <li>Tournament Director</li>
+                    <li>Poker Dealer</li>
+                    <li>Cashier</li>
+                </ul>
+                <p>Though I initially applied to be a poker dealer, in May 2006 I was hired as a part-time cashier in the poker room. After about a month, I became 
+                        the full-time swing shift cashier and I held that position until March of 2007 when I was promoted 
+                        to poker dealer. I spent the next 13 years perfecting my craft and getting to know many of our regular 
+                        customers. Beginning in 2020, I began officially training to become a supervisor and tournament director. My training 
+                        was completed in March, one week before the Red Rock closed.
+                </p>
+            <h3>Vons Supermarket</h3>
+            <div class="year">2002-2003</div>
+                <ul>
+                    <li>Meat Department Assistant</li>
+                    <li>Courtesy Clerk</li>
+                </ul>
+                <p>After my 2nd year at UCLA, I decided to take a year off from my studies and move back home. I was hired as a courtesy clerk at the local Vons Supermarket. 
+                    I eventually was promoted to Meat Department Assistant where I worked for a few months before returning to UCLA.
+                </p>
+            <h3>GNA Brook Fire Protection</h3>
+            <div class="year">1999-2001</div>
+                <ul>
+                    <li>Office Assistant</li>
+                </ul>
+                <p>During the summers of 1999 through 2001, I worked as an office assistant at GNA Brook Fire Protection. 
+                    My job mostly consisted of answering phones, dispatching workers, and inputing data into the company computer.
+                </p>
+        </section>
+        <section id="education">
+            <h2>Education</h2><hr>
+                <a class="example-image-link" href="images/UCLA.jpg" data-lightbox="example-2" data-title="Royce Hall at the University of California Los Angeles">
+                    <img src="images/UCLA.jpg" class="example-image" alt="Royce Hall UCLA">
+                </a>
+                <h3>University of California Los Angeles</h3>
+                <div class="year">2000-2002<br>2003-2006</div>
+                    <p>I came from a long line of UCLA Bruins so when it came time to apply to colleges, I only applied to one. To my great delight, 
+                        I was accepted into my dream school to play baseball. Unfortunately, I injured my shoulder during my senior year of high school 
+                        and despite a full summer of very strenuous rehab, I reinjured it during my first year at UCLA. Without baseball, I began to feel lost and 
+                        decided to take a one year break after my second year. In 2003, I returned to UCLA and joined the Zeta Psi Fraternity of North America. I focused my studies on 
+                        history and spent much of my time playing poker and participating in fraternity activities. I left UCLA in 2006 and immediately moved to Las Vegas with 
+                        the hope of becoming a poker dealer.
+                    </p>
+                <h3>Glendora High School</h3>
+                <div class="year">1996-2000</div>
+                    <p>I left middle school as a scrawny, bullied kid, but arrived at high school nearly a foot taller and ready for a new beginning. I played both football and 
+                        baseball my freshman year but after that, I decided to stick with only baseball. By my senior year, I was getting straight As and I was not only playing on the school varsity team but 
+                        also on the Pasadena Red Birds, a travelling scout team affiliated with the St. Louis Cardinals.
+                    </p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2><hr>
+                <p>This is a list of specializations and courses I have taken online. 
+                    Click on the links below to view the certificate.</p>
+                <ul>
+                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/specialization/RBF2CWMK7MQB">Excel Skills for Business Specialization by Macquarie University</a></li>
+                    <li><a target=_blank href="https://www.udemy.com/certificate/UC-60fcc7f0-cd58-462f-8380-1ec762aa71dc/">Master PowerPoint Presentation by Udemy</a></li>
+                    <li><a target=_blank href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/1f558d4c68d542f2a31fdace21af2de1-1591423946332.png">Social Media Marketing Certification from Hubspot Academy</a></li>
+                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/WDZW2BCX5VJT">Introduction to HTML5 by the University of Michigan</a></li>
+                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/L6F97YCETRCH">Introduction to CSS3 by the University of Michigan</a></li>
+                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/DSV8VN7653ZT">Interactivity with Javascript by the University of Michigan</a></li>
+                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/CL3NU7AWF9UB">Advanced Styling with Responsive Design by the University of Michigan</a></li>
+                </ul>
+        </section>
+        <section id="forfun">
+            <h2>For Fun!</h2><hr>
+            <a class="example-image-link" href="images/LasVegasSign.jpg" data-lightbox="example-3" data-title="The Famous Las Vegas Sign">
+                <img src="images/LasVegasSign.jpg" alt="Las Vegas Sign">
+            </a>
+                <h3>1-100 High/Low Game</h3>
+                    <p>To showcase what I have learned in my web design courses, I thought it would be fun to use all this knowledge to create a little game. The object of the game is 
+                        to try to guess the correct number. After each guess you will be told if the correct number is higher or lower. Good luck!       
+                    </p>
+                    <div id="game">    
+                        <label for="guess" id="guessLabel">Guess a number between 1 and 100:</label><br>
+                        <input type="number" id="guess" value=""><br>
+                        <input type="submit" id="submitGuess" onclick="yourGuess()" value="Submit Guess">
+                        <input type="submit" id="newGame" onclick="newGame(true)" value="New Game"><br><br>
+                        <span id="result"></span><span id="numOfGuesses"></span><br><br>
+                        <textarea readonly id="output" name="output" rows="3" cols="40"></textarea>
+                    </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2><hr>
+                <div id="socialLinks">
+                    <a href="https://www.facebook.com/profile.php?id=2520252" target="_blank" aria-label="My Facebook Page"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                    <a href="https://twitter.com/dcwilson26" target="_blank" aria-label="My Twitter Page"><img src="images/twitter.png" alt="Twitter Icon"></a>
+                    <a href="https://www.linkedin.com/in/daniel-wilson-03508b1a9/" target="_blank" aria-label="My LinkedIn Page"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
+                </div>
+                <form action="mailto:dcwilson26@hotmail.com?subject=Contact" id="form" method="post" enctype="text/plain">
+                    <label for="name">Name:</label><br>
+                    <input id="name" name="name" type="text"><br>
+                    <label for="email">Email:</label><br>
+                    <input id="email" name="email" type="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="10" cols="40" placeholder="Type message here..."></textarea><br>
+                    <input type="submit" name="submit" value="Send Email">
+                    <input type="reset" value="Clear Form">
+                </form>
+        </section>
+    </main>
+    <footer>
+        Created from scratch by Daniel Wilson, July 2020
+    </footer>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
