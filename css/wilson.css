@@ -160,6 +160,10 @@ footer{
     color: rgb(255, 255, 255);
 }
 
+#yourGuesses{
+    display: none;
+}
+
 #forfun{
     margin: auto;
     text-align: center;
