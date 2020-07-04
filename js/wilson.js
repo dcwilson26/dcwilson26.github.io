@@ -1,6 +1,6 @@
 window.onload=function(){
     var input = document.getElementById("guess");
-    input.addEventListener("keyup", function(event){
+    input.addEventListener("keypress", function(event){
         if(event.keyCode === 13){
             event.preventDefault();
             document.getElementById("submitGuess").onclick();
