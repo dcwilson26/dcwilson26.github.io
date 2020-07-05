@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daniel Wilson Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Galada&display=swap">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/wilson.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,6 +14,7 @@
 <body>
     <header class="topnav">
             <h1>Daniel Wilson</h1>
+            <img src="images/DanielWilson.gif" alt="Logo" id="titleLogo">
                 <nav id="myLinks">
                     <a href="#about" onclick="hamburger(this)"><img class="navIcon" alt="About Icon" src="images/about.png">About Me</a>
                     <a href="#experience" onclick="hamburger(this)"><img class="navIcon" alt="Experience Icon" src="images/experience.png">Experience</a>
@@ -28,45 +30,32 @@
             <div class="slideshow-container">
                 <div class="mySlides fade" id="activeSlide">
                     <div class="numbertext">1 / 6</div>
-                    <a class="example-image-link" href="images/Danny.jpg" data-lightbox="example-set" data-title="Las Vegas 2020">
-                        <img src="images/Danny.jpg" class="example-image" alt="Las Vegas 2020">
-                    </a>
+                    <img src="images/Danny.jpg" alt="Las Vegas 2020">
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 6</div>
-                    <a class="example-image-link" href="images/DannyNY1.JPG" data-lightbox="example-set" data-title="New York City 2019">
-                        <img src="images/DannyNY1.JPG" class="example-image" alt="New York City 2019">
-                    </a>
+                    <div class="numbertext">2 / 6</div>                    
+                    <img src="images/DannyNY1.JPG" alt="New York City 2019">                    
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 6</div>
-                    <a class="example-image-link" href="images/DannyNY2.JPG" data-lightbox="example-set" data-title="Empire State Building 2019">
-                        <img src="images/DannyNY2.JPG" class="example-image" alt="Empire State Building 2019">
-                    </a>
+                    <img src="images/DannyNY2.JPG" alt="Empire State Building 2019">                    
                 </div>
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 6</div>
-                    <a class="example-image-link" href="images/DannyNY3.JPG" data-lightbox="example-set" data-title="Battery Park 2019">
-                        <img src="images/DannyNY3.JPG" class="example-image" alt="Battery Park 2019">
-                    </a>
+                    <div class="numbertext">4 / 6</div>                    
+                    <img src="images/DannyNY3.JPG" alt="Battery Park 2019">                    
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">5 / 6</div>
-                    <a class="example-image-link" href="images/DannyDisney.JPG" data-lightbox="example-set" data-title="Disneyland 2017">
-                        <img src="images/DannyDisney.JPG" class="example-image" alt="Disneyland 2017">
-                    </a>
+                    <img src="images/DannyDisney.JPG" alt="Disneyland 2017">                    
                 </div>
                 <div class="mySlides fade">
                     <div class="numbertext">6 / 6</div>
-                    <a class="example-image-link" href="images/DannyBeach.JPG" data-lightbox="example-set" data-title="Santa Monica 2014">
-                        <img src="images/DannyBeach.JPG" class="example-image" alt="Santa Monica 2014">
-                    </a>
+                    <img src="images/DannyBeach.JPG" alt="Santa Monica 2014">                    
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <br>
-  
+            <br>  
             <div id="dotContainer">
                 <span class="dot active" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
@@ -87,8 +76,7 @@
         </section>
         <section id="experience">
             <h2>Experience</h2><hr>
-            <a class="example-image-link" href="images/RedRock.jpg" data-lightbox="example-1" data-title="Red Rock Casino Resort & Spa, Las Vegas, NV">
-                <img src="images/RedRock.jpg" class="example-image" alt="Red Rock Casino Resort & Spa">
+            <img src="images/RedRock.jpg" alt="Red Rock Casino Resort & Spa">
             </a>
             <h3>Red Rock Casino Resort & Spa</h3>
             <div class="year">2006-2020</div>
@@ -124,9 +112,7 @@
         </section>
         <section id="education">
             <h2>Education</h2><hr>
-                <a class="example-image-link" href="images/UCLA.jpg" data-lightbox="example-2" data-title="Royce Hall at the University of California Los Angeles">
-                    <img src="images/UCLA.jpg" class="example-image" alt="Royce Hall UCLA">
-                </a>
+                <img src="images/UCLA.jpg" class="example-image" alt="Royce Hall UCLA">
                 <h3>University of California Los Angeles</h3>
                 <div class="year">2000-2002<br>2003-2006</div>
                     <p>I came from a long line of UCLA Bruins so when it came time to apply to colleges, I only applied to one. To my great delight, 
@@ -148,31 +134,33 @@
                 <p>This is a list of specializations and courses I have taken online. 
                     Click on the links below to view the certificate.</p>
                 <ul>
-                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/specialization/RBF2CWMK7MQB">Excel Skills for Business Specialization by Macquarie University</a></li>
-                    <li><a target=_blank href="https://www.udemy.com/certificate/UC-60fcc7f0-cd58-462f-8380-1ec762aa71dc/">Master PowerPoint Presentation by Udemy</a></li>
-                    <li><a target=_blank href="https://hubspot-academy.s3.amazonaws.com/prod/tracks/user-certificates/1f558d4c68d542f2a31fdace21af2de1-1591423946332.png">Social Media Marketing Certification from Hubspot Academy</a></li>
-                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/WDZW2BCX5VJT">Introduction to HTML5 by the University of Michigan</a></li>
-                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/L6F97YCETRCH">Introduction to CSS3 by the University of Michigan</a></li>
-                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/DSV8VN7653ZT">Interactivity with Javascript by the University of Michigan</a></li>
-                    <li><a target=_blank href="https://www.coursera.org/account/accomplishments/verify/CL3NU7AWF9UB">Advanced Styling with Responsive Design by the University of Michigan</a></li>
+                    <li><a class="example-image-link" href="images/ExcelCertificate.jpg" data-lightbox="example-1" data-title="Excel Skills for Business Specialization by Macquarie University">Excel Skills for Business Specialization by Macquarie University</a></li>
+                    <li><a class="example-image-link" href="images/PowerPointCertificate.jpg" data-lightbox="example-2" data-title="Master PowerPoint Presentation by Udemy">Master PowerPoint Presentation by Udemy</a></li>
+                    <li><a class="example-image-link" href="images/SocialMediaCertificate.png" data-lightbox="example-3" data-title="Social Media Marketing Certification from Hubspot Academy">Social Media Marketing Certification from Hubspot Academy</a></li>
+                    <li><a class="example-image-link" href="images/HTML5Certificate.jpg" data-lightbox="example-4" data-title="Introduction to HTML5 by the University of Michigan">Introduction to HTML5 by the University of Michigan</a></li>
+                    <li><a class="example-image-link" href="images/CSS3Certificate.jpg" data-lightbox="example-5" data-title="Introduction to CSS3 by the University of Michigan">Introduction to CSS3 by the University of Michigan</a></li>
+                    <li><a class="example-image-link" href="images/JavascriptCertificate.jpg" data-lightbox="example-6" data-title="Interactivity with Javascript by the University of Michigan">Interactivity with Javascript by the University of Michigan</a></li>
+                    <li><a class="example-image-link" href="images/ResponsiveDesignCertificate.jpg" data-lightbox="example-7" data-title="Advanced Styling with Responsive Design by the University of Michigan">Advanced Styling with Responsive Design by the University of Michigan</a></li>
                 </ul>
         </section>
         <section id="forfun">
-            <h2>For Fun!</h2><hr>
-            <a class="example-image-link" href="images/LasVegasSign.jpg" data-lightbox="example-3" data-title="The Famous Las Vegas Sign">
-                <img src="images/LasVegasSign.jpg" alt="Las Vegas Sign">
-            </a>
+            <h2>For Fun!</h2><hr>            
+                <img src="images/LasVegasSign.jpg" alt="Las Vegas Sign">            
                 <h3>1-100 High/Low Game</h3>
                     <p>To showcase what I have learned in my web design courses, I thought it would be fun to use all this knowledge to create a little game. The object of the game is 
                         to try to guess the correct number. After each guess you will be told if the correct number is higher or lower. Good luck!       
                     </p>
                     <div id="game">    
-                        <label for="guess" id="guessLabel">Click New Game to start.</label><br>
-                        <input type="number" id="guess" value=""><br>
-                        <div id="submitGuess"><input type="submit" id="yourGuess" onclick="yourGuess()" value="Submit Guess"></div>
-                        <input type="submit" id="newGame" onclick="newGame(true)" value="New Game"><br><br>
-                        <span id="result"></span><span id="numOfGuesses"></span><br><br>
-                        <textarea readonly id="output" name="output" rows="3" cols="40"></textarea>
+                        <div id="gameLeft">
+                            <label for="guess" id="guessLabel">Click New Game to start.</label><br>
+                            <input type="number" name="guess" id="guess" value=""><br>
+                            <input type="submit" id="submitGuess" onclick="yourGuess()" value="Submit Guess">
+                            <input type="button" id="newGame" onclick="newGame(true)" value="New Game"><br><br>
+                        </div>
+                        <div id="gameRight">
+                            <span id="result"></span><span id="numOfGuesses"></span><br><br>
+                            <textarea readonly id="output" name="output" rows="3" cols="40"></textarea>
+                        </div>
                     </div>
         </section>
         <section id="contact">

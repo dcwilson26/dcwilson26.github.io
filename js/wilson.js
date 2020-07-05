@@ -11,6 +11,7 @@ window.onload=function(){
 
 var m = window.matchMedia("(min-width:768px)")
 var l = window.matchMedia("(orientation:landscape")
+var xl = window.matchMedia("(min-width:1000px)")
 m.addListener(navLinks)
 l.addListener(navLinks)
 
@@ -82,7 +83,14 @@ function newGame(){
     guesses.value = "";
     numToGuess = Math.floor(Math.random()*100) + 1;
     document.getElementById("output").rows = 3;
-    guesses.value = "Your guesses:\n"
+    guesses.value = "Your guesses:\n";
+    if(l.matches){
+        document.getElementById("gameRight").style.width = "47%";
+        }   else if(xl.matches){
+            document.getElementById("gameRight").style.width = "47%";
+            }   else{
+                document.getElementById("gameRight").style.width = "100%";
+            }
 }
 
 function hamburger() {
@@ -132,10 +140,7 @@ $(document).ready(function(){
   
         $('html, body').animate({
             scrollTop: $(hash).offset().top
-            }, 800, function(){
-     
-        
-        });
+            }, 800);
         }
     });
 });
