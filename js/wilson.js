@@ -8,7 +8,7 @@ window.onload=function(){
     })
 }
 
-var m = window.matchMedia("(min-width:768px)")
+var m = window.matchMedia("(min-width:800px)")
 var l = window.matchMedia("(orientation:landscape")
 var xl = window.matchMedia("(min-width:1000px)")
 m.addListener(navLinks)
