@@ -668,6 +668,12 @@ main{
     padding-left: 20%;
 }
 
+hr{
+    height: 5px;
+    background-color: #3D5A80;
+    margin-bottom: 3%;
+}
+
 .navIcon{
     display: inline-block;
     height: 1rem;
