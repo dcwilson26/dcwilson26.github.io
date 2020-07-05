@@ -10,7 +10,7 @@ window.onload=function(){
 
 var m = window.matchMedia("(min-width:768px)")
 var l = window.matchMedia("(orientation:landscape")
-var xl = window.matchMedia("(min-width:1000px)")
+var xl = window.matchMedia("(min-width:992px)")
 m.addListener(navLinks)
 l.addListener(navLinks)
 
@@ -143,3 +143,27 @@ $(document).ready(function(){
         }
     });
 });
+
+function uclaBruins(){
+    document.getElementById("ucla").src = "images/UCLABruins.jpg"
+}
+
+function royceHall(){
+    document.getElementById("ucla").src = "images/UCLA.jpg"
+}
+
+function redRockLogo(){
+    document.getElementById("redRock").src = "images/RedRockLogo.jpg"
+}
+
+function redRockCasino(){
+    document.getElementById("redRock").src = "images/RedRock.jpg"
+}
+
+function lasVegasStrip(){
+    document.getElementById("vegas").src = "images/LasVegasStrip.jpg"
+}
+
+function lasVegasSign(){
+    document.getElementById("vegas").src = "images/LasVegasSign.jpg"
+}

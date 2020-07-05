@@ -36,6 +36,10 @@ h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#about h3{
+    color: #EE6C4D;
+}
+
 .lineBreak{
     display: none;
 }
@@ -402,6 +406,7 @@ textarea{
     from {opacity: .4}
     to {opacity: 1}
 }
+
 @media screen and (min-width:768px){
 
 #about{
@@ -673,7 +678,7 @@ main img{
     
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:992px){
 
 html{
     font-size: 20px;

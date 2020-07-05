@@ -73,11 +73,32 @@
                     Eventually, my odyssey took me into the realm of web design and coding which culminated in 
                     a capstone project to design my own webpage; the very page you are visiting right now! 
                 </p>
+                <h3>*** To Those Grading This Project ***</h3>
+                <p>You should notice that this webpage responds to a variety of screen sizes and orientations. 
+                    On mobile devices all information is displayed in a single column with a sticky dropdown navigation bar 
+                    at the top and different colored sections. However, turning the device sideways into "landscape" view, will 
+                    change the navigation bar from a dropdown menu to an inline list. Viewing the page on a desktop or laptop will display the
+                    navigation down the left side of the screen with added icons. The title is replaced with an animated gif of my creation and
+                    items on the main section of the page will now appear in more columns, as can be seen in the Experience lists, the Skills links, and the
+                    High/Low game. I also replaced the solid lines under the section headers with a page break image.
+                </p>
+                <p>Regardless of your viewing device, a carousel of pictures appears at the top of the main page. Use the 
+                    left and right arrows to see the different pictures. All links have some sort of hover effect and Javascript was also added to 
+                    give a smooth scroll when clicking on one of the navigation links. Also using Javascript, hovering over the pictures at the top of the 
+                    Experience, Education, and For Fun sections will display a new picture. Clicking on any of the 
+                    links in the Skills section will display the corresponding certificate in a "Light Box". In the For Fun section, 
+                    you will see a game I created using Javascript with numerous steps taken to validate the input. Give it a try and 
+                    good luck! Lastly, I created a form where you can contact me if you have any questions.
+                </p>
+                <p>    
+                    It took 215 lines of HTML, 943 lines of CSS styling, and 169 lines of Javascript code to make this page so please take your
+                    time and explore. Thank you very much for your time and effort!
+                </p>
         </section>
         <section id="experience">
             <h2>Experience</h2><hr>
             <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">
-            <img src="images/RedRock.jpg" alt="Red Rock Casino Resort & Spa">
+            <img src="images/RedRock.jpg" id="redRock" alt="Red Rock Casino Resort & Spa" onmouseover="redRockLogo()" onmouseout="redRockCasino()">
             <h3>Red Rock Casino Resort & Spa</h3>
             <div class="year">2006-2020</div>
                 <ul>            
@@ -89,7 +110,7 @@
                 <p>Though I initially applied to be a poker dealer, in May 2006 I was hired as a part-time cashier in the poker room. After about a month, I became 
                         the full-time swing shift cashier and I held that position until March of 2007 when I was promoted 
                         to poker dealer. I spent the next 13 years perfecting my craft and getting to know many of our regular 
-                        customers. Beginning in 2020, I began officially training to become a supervisor and tournament director. My training 
+                        customers. Starting in 2020, I began officially training to become a supervisor and tournament director. My training 
                         was completed in March, one week before the Red Rock closed.
                 </p>
             <h3>Vons Supermarket</h3>
@@ -107,13 +128,13 @@
                     <li>Office Assistant</li>
                 </ul>
                 <p>During the summers of 1999 through 2001, I worked as an office assistant at GNA Brook Fire Protection. 
-                    My job mostly consisted of answering phones, dispatching workers, and inputing data into the company computer.
+                    My job consisted mostly of answering phones, dispatching workers, and inputing data into the company computer.
                 </p>
         </section>
         <section id="education">
             <h2>Education</h2><hr>
                 <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">
-                <img src="images/UCLA.jpg" class="example-image" alt="Royce Hall UCLA">
+                <img src="images/UCLA.jpg" id="ucla" alt="Royce Hall UCLA" onmouseover="uclaBruins()" onmouseout="royceHall()">
                 <h3>University of California Los Angeles</h3>
                 <div class="year">2000-2002<br>2003-2006</div>
                     <p>I came from a long line of UCLA Bruins so when it came time to apply to colleges, I only applied to one. To my great delight, 
@@ -148,7 +169,7 @@
         <section id="forfun">
             <h2>For Fun!</h2><hr>
                 <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">          
-                <img src="images/LasVegasSign.jpg" alt="Las Vegas Sign">            
+                <img src="images/LasVegasSign.jpg" id="vegas" alt="Las Vegas Sign" onmouseover="lasVegasStrip()" onmouseout="lasVegasSign()">            
                 <h3>1-100 High/Low Game</h3>
                     <p>To showcase what I have learned in my web design courses, I thought it would be fun to use all this knowledge to create a little game. The object of the game is 
                         to try to guess the correct number. After each guess you will be told if the correct number is higher or lower. Good luck!       
