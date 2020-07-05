@@ -29,15 +29,15 @@ function yourGuess(){
     var guess = document.getElementById("guess").value;
     var guesses = document.getElementById("output");
             
-    if(isNaN(guess) || guess < 1 || guess > 100){
+    if(isNaN(guess) || guess < 1 || guess > 100 || guess - Math.floor(guess) !== 0){
     document.getElementById("guess").value = "";
-    alert("Please enter a number between 1 and 100");
+    alert("Please enter a whole number between 1 and 100");
     }   else if (guess == numToGuess){
         var rows = document.getElementById("output").rows;
         document.getElementById("output").rows = rows+1;
         document.getElementById("guess").value = "";
         var numOfGuesses = rows-2;
-        guesses.value = guesses.value + "\r" + numOfGuesses+".  Correct! ("+guess+")";
+        guesses.value = guesses.value + "\r" + numOfGuesses+".  Correct! ("+Math.floor(guess)+")";
             if(numOfGuesses == 1){
             document.getElementById("result").innerHTML = "WOW! It took you only ";
             document.getElementById("numOfGuesses").innerHTML = numOfGuesses+" guess.";
@@ -56,14 +56,14 @@ function yourGuess(){
         document.getElementById("output").rows = rows+1;
         document.getElementById("guess").value = "";
         var numOfGuesses = rows-2
-        guesses.value = guesses.value + "\r" + numOfGuesses+".  Lower! ("+guess+")";
+        guesses.value = guesses.value + "\r" + numOfGuesses+".  Lower ("+Math.floor(guess)+")";
         document.getElementById("numOfGuesses").innerHTML = numOfGuesses;
         }   else{
             var rows = document.getElementById("output").rows;
             document.getElementById("output").rows = rows+1;
             document.getElementById("guess").value = "";
             var numOfGuesses = rows-2
-            guesses.value = guesses.value + "\r" + numOfGuesses+".  Higher! ("+guess+")";
+            guesses.value = guesses.value + "\r" + numOfGuesses+".  Higher ("+Math.floor(guess)+")";
             document.getElementById("numOfGuesses").innerHTML = numOfGuesses;
     }
 }
