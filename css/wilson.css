@@ -83,6 +83,7 @@ footer{
     position: fixed;
     top: 0;
     z-index: 1000;
+    border-bottom: solid 1px #293241;
 }
 
 .topnav #titleLogo{
@@ -102,15 +103,18 @@ footer{
     font-weight: bold;
     display: block;
     text-align: right;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    transition: none;
 }
   
 .topnav a.icon{
     background-color: #A8DADC;
+    border: solid 1px #293241;
     display: block;
     position: fixed;
     right: 0;
     top: 0;
+    height: 51px;
 }
   
 .topnav a:hover{
@@ -162,11 +166,14 @@ footer{
     width: 85%;
     height: 6rem;
     border: none;
+    border-radius: 5px;
     background-color: #A8DADC;
     color: #293241;
     text-decoration: none;
+    box-shadow: 2px 2px 4px #293241, 2px 2px 4px #646464;
     cursor: pointer;
     padding: 5%;
+    transition: 0.3s ease;
 }
 
 #skills a:hover{
@@ -197,13 +204,13 @@ footer{
     font-size: 1.5rem;
     font-weight: bold;
     color: #3D5A80;
-    text-shadow: 1px 1px rgb(100, 100, 100);
+    text-shadow: 1px 1px #646464;
 }
 
 #result{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.25rem;
-    text-shadow: 1px 1px rgb(100, 100, 100);
+    text-shadow: 1px 1px #646464;
     margin: auto;
 }
 
@@ -212,7 +219,7 @@ footer{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #EE6C4D;
     font-size: 1.5rem;
-    text-shadow: 1px 1px rgb(100, 100, 100);
+    text-shadow: 1px 1px #646464;
     margin: auto;
 }
 
@@ -226,9 +233,10 @@ footer{
     margin: 1%;
     border-radius: 25px;
     border: solid 1px #293241;
-    box-shadow: 2px 2px 4px #293241, 2px 2px 4px rgb(100, 100, 100);
+    box-shadow: 2px 2px 4px #293241, 2px 2px 4px #646464;
     cursor: pointer;
     outline: none;
+    transition: 0.3s ease;
 }
 
 #forfun input[type="submit"]:active{
@@ -276,6 +284,7 @@ footer{
     width: 20%;
     margin: 1% auto;
     padding: 0 3%;
+    transition: 0.3s ease;
 }
 
 #socialLinks img{
@@ -627,7 +636,7 @@ main img{
     margin: 1%;
     border-radius: 25px;
     border: solid 1px #293241;
-    box-shadow: 2px 2px 4px #293241, 2px 2px 4px rgb(100, 100, 100);
+    box-shadow: 2px 2px 4px #293241, 2px 2px 4px #646464;
     cursor: pointer;
     outline: none;
 }
@@ -727,6 +736,7 @@ hr{
     width: 100%;
     line-height: 9vh;
     border-top: solid 2px #FFFFFF;
+    transition: 0.3s ease;
 }
       
 .topnav a.icon{
@@ -828,13 +838,13 @@ main img{
     font-size: 1.5rem;
     font-weight: bold;
     color: #3D5A80;
-    text-shadow: 1px 1px rgb(100, 100, 100);
+    text-shadow: 1px 1px #646464;
 }
 
 #result{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5rem;
-    text-shadow: 1px 1px rgb(100, 100, 100);
+    text-shadow: 1px 1px #646464;
     margin: auto;
 }
 
@@ -842,7 +852,7 @@ main img{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #EE6C4D;
     font-size: 1.5rem;
-    text-shadow: 1px 1px rgb(100, 100, 100);
+    text-shadow: 1px 1px #646464;
     margin: auto;
 }
 
@@ -857,7 +867,7 @@ main img{
     margin: 1%;
     border-radius: 25px;
     border: solid 1px #293241;
-    box-shadow: 2px 2px 4px #293241, 2px 2px 4px rgb(100, 100, 100);
+    box-shadow: 2px 2px 4px #293241, 2px 2px 4px #646464;
     cursor: pointer;
     outline: none;
 }
