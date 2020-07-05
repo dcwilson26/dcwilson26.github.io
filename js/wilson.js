@@ -27,8 +27,7 @@ function navLinks(){
 
 function yourGuess(){
     var guess = document.getElementById("guess").value;
-    var guesses = document.getElementById("output");
-            
+    var guesses = document.getElementById("output");         
     if(isNaN(guess) || guess < 1 || guess > 100 || guess - Math.floor(guess) !== 0){
     document.getElementById("guess").value = "";
     alert("Please enter a whole number between 1 and 100");
@@ -38,6 +37,7 @@ function yourGuess(){
         document.getElementById("guess").value = "";
         var numOfGuesses = rows-2;
         guesses.value = guesses.value + "\r" + numOfGuesses+".  Correct! ("+Math.floor(guess)+")";
+        guesses.scrollTop = guesses.scrollHeight;
             if(numOfGuesses == 1){
             document.getElementById("result").innerHTML = "WOW! It took you only ";
             document.getElementById("numOfGuesses").innerHTML = numOfGuesses+" guess.";
@@ -57,6 +57,7 @@ function yourGuess(){
         document.getElementById("guess").value = "";
         var numOfGuesses = rows-2
         guesses.value = guesses.value + "\r" + numOfGuesses+".  Lower ("+Math.floor(guess)+")";
+        guesses.scrollTop = guesses.scrollHeight;
         document.getElementById("numOfGuesses").innerHTML = numOfGuesses;
         }   else{
             var rows = document.getElementById("output").rows;
@@ -64,6 +65,7 @@ function yourGuess(){
             document.getElementById("guess").value = "";
             var numOfGuesses = rows-2
             guesses.value = guesses.value + "\r" + numOfGuesses+".  Higher ("+Math.floor(guess)+")";
+            guesses.scrollTop = guesses.scrollHeight;
             document.getElementById("numOfGuesses").innerHTML = numOfGuesses;
     }
 }
