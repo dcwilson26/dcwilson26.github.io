@@ -25,6 +25,7 @@ h2{
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 h3{
@@ -33,6 +34,10 @@ h3{
     font-size: 1.5rem;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lineBreak{
+    display: none;
 }
 
 .year{
@@ -397,7 +402,6 @@ textarea{
     from {opacity: .4}
     to {opacity: 1}
 }
-
 @media screen and (min-width:768px){
 
 #about{
@@ -680,9 +684,13 @@ main{
 }
 
 hr{
-    height: 5px;
-    background-color: #3D5A80;
-    margin-bottom: 3%;
+    display: none;
+}
+
+.lineBreak{
+    display: block;
+    width: 100%;
+    margin: 1% 0;
 }
 
 .navIcon{
