@@ -171,7 +171,7 @@ function lasVegasSign(){
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 36.208316, lng: -115.2701414 },
-    zoom: 13
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8
   });
 }
