@@ -40,10 +40,6 @@ h3{
     color: #EE6C4D;
 }
 
-.lineBreak{
-    display: none;
-}
-
 .year{
     color: #3D5A80;
     font-weight: bold;
@@ -62,6 +58,13 @@ main img{
     display: block;
     width: 90%;
     margin: auto;
+    border-radius: 20px;
+    border: solid 5px #3D5A80;
+}
+
+.lineBreak{
+    display: none;
+    border: none;
 }
 
 #experience ul{
@@ -175,7 +178,7 @@ footer{
     width: 85%;
     height: 6rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #A8DADC;
     color: #293241;
     text-decoration: none;
@@ -296,22 +299,55 @@ footer{
     transition: 0.3s ease;
 }
 
-#socialLinks img{
+#contact img{
     border-radius: 20%;
+    border: none;
 }
 
 #socialLinks img:active{
     box-shadow: 0 0 5px #293241, 0 0 10px #3D5A80;
 }
 
-#form{
-    width: 80%;
-    padding: 10% 0;
+#map{
+    width: 100%;
+    height: 400px;
+    padding: 5%;
     margin: 5% auto;
+    background-color: #98C1D9;
+    border-radius: 20px;
+}
+
+#form{
+    width: 100%;
+    padding: 5%;
+    margin: 10% auto;
+    background-color: #98C1D9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3D5A80;
+    border-radius: 20px;
+    border: solid 5px #3D5A80;
 }
 
 #form input[type="text"], input[type="email"]{
     width: 100%;
+}
+
+#form input[type="submit"], input[type="reset"]{
+    background-color: #3D5A80;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+#form input[type="submit"]:hover{
+    background-color: #E0FBFC;
+    color: #3D5A80;
+    cursor: pointer;
+}
+
+#form input[type="reset"]:hover{
+    background-color: #E0FBFC;
+    color: #3D5A80;
+    cursor: pointer;
 }
 
 textarea{
@@ -673,7 +709,12 @@ main img{
 }
 
 #form{
-    padding-top: 3%;
+    margin-top: 3%;
+    width: 80%;
+}
+
+#map{
+    width: 80%;
 }
     
 }
@@ -764,10 +805,6 @@ hr{
 .topnav a:hover{
     background-color: #98C1D9;
     color: #293241;
-}
-
-.slideshow-container{
-    border: solid 3px #3D5A80;
 }
 
 .prev:hover, .next:hover, .prev:active, .next:active{
@@ -917,7 +954,7 @@ main img{
 
 }
 
-@media screen and (min-width:1550px){
+@media screen and (min-width:1440px){
 
 main{
     padding-left: 15%;
@@ -936,8 +973,7 @@ footer{
 }
 
 #skills a{
-    width: 85%;
-    font-size: 1.05rem;
+    width: 90%;
 }
 
 }

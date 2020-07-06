@@ -145,7 +145,7 @@ $(document).ready(function(){
 });
 
 function uclaBruins(){
-    document.getElementById("ucla").src = "images/UCLABruins.jpg"
+    document.getElementById("ucla").src = "images/UCLABruins.jpg"    
 }
 
 function royceHall(){
@@ -166,4 +166,12 @@ function lasVegasStrip(){
 
 function lasVegasSign(){
     document.getElementById("vegas").src = "images/LasVegasSign.jpg"
+}
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8
+  });
 }
