@@ -36,6 +36,12 @@ h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h4{
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 #about h3{
     color: #EE6C4D;
 }
