@@ -50,6 +50,10 @@ h4{
     color: #EE6C4D;
 }
 
+#about li{
+    margin: 1% 3%;
+}
+
 .year{
     color: #3D5A80;
     font-weight: bold;
