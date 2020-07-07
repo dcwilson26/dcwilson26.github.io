@@ -54,9 +54,15 @@ p{
     padding: 0 5%;
 }
 
-#experience img, #education img, #forfun img{
+.headImage{
     display: block;
     width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    border: solid 5px #3D5A80;
+}
+
+#about img{
     margin: auto;
     border-radius: 20px;
     border: solid 5px #3D5A80;
@@ -300,7 +306,7 @@ footer{
 }
 
 #socialLinks img{
-    border-radius: 20%;
+    border-radius: 20px;
 }
 
 #socialLinks img:active{
@@ -313,6 +319,8 @@ footer{
     padding: 5%;
     margin: 5% auto;
     background-color: #98C1D9;
+    border: solid 5px #3D5A80;
+    border-radius: 20px;
 }
 
 #form{
@@ -581,7 +589,7 @@ textarea{
     width: 50%;
 }
     
-main img{
+.headImage{
     width: 50%;
 }
     
@@ -731,12 +739,6 @@ hr{
     display: none;
 }
 
-.lineBreak{
-    display: block;
-    width: 100%;
-    margin: 1% 0;
-}
-
 .navIcon{
     display: inline-block;
     height: 1rem;
@@ -827,7 +829,7 @@ hr{
     width: 60%;
 }
 
-main img{
+.headImage{
     width: 60%;
 }
 
@@ -948,6 +950,14 @@ main img{
 
 #socialLinks img:hover{
     box-shadow: 0 0 5px #293241, 0 0 10px #3D5A80;
+}
+
+.lineBreak{
+    display: block;
+    width: 100%;
+    margin: 1% 0;
+    border-radius: 0%;
+    border: none;
 }
 
 }
