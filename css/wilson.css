@@ -305,7 +305,7 @@ footer{
 }
 
 #socialLinks img{
-    border-radius: 10px;
+    border-radius: 20%;
     transition: 0.3s ease;
 }
 
@@ -313,11 +313,15 @@ footer{
     box-shadow: 0 0 5px #293241, 0 0 10px #3D5A80;
 }
 
+#contact p{
+    text-align: center;
+}
+
 #map{
     width: 100%;
     height: 400px;
     padding: 5%;
-    margin: 5% auto;
+    margin: 0% auto 5% auto;
     background-color: #98C1D9;
     border: solid 5px #3D5A80;
     border-radius: 20px;
