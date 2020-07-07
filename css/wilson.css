@@ -300,8 +300,12 @@ footer{
 }
 
 #contact img{
-    border-radius: 20%;
     border: none;
+    border-radius: 0%;
+}
+
+#socialLinks img{
+    border-radius: 20%;
 }
 
 #socialLinks img:active{
