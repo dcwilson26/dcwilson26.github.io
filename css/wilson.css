@@ -540,10 +540,6 @@ textarea{
 
 @media only screen and (orientation:landscape){
 
-.grading{
-    color: #293241;
-}
-
 #about{
     padding: 10% 3%;
 }
@@ -755,6 +751,10 @@ main{
 
 hr{
     display: none;
+}
+
+.grading{
+    color: #293241;
 }
 
 .navIcon{
