@@ -172,6 +172,16 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 36.208, lng: -115.270 },
-    zoom: 13
+    zoom: 12
   });
+}
+
+function initMap() {
+    // The location of Uluru
+    var desertShores = {lat: 36.208, lng: -115.270};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: desertShores});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: desertShores, map: map});
 }
