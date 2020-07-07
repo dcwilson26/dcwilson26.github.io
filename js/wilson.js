@@ -169,13 +169,14 @@ function lasVegasSign(){
 }
 
 function initMap() {
-    var myLatLng = {lat: 36.200, lng: -115.275};
+    var myLatLng = {lat: 36.2003394, lng: -115.2757157};
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: myLatLng
     });
     var marker = new google.maps.Marker({
     position: myLatLng,    
+    title: "South Shores, Las Vegas"
     });
     marker.setMap(map);
 }
