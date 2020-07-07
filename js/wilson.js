@@ -169,7 +169,7 @@ function lasVegasSign(){
 }
 
 function initMap() {
-    var myLatLng = {lat: 36.2003394, lng: -115.2757157};
+    var myLatLng = {lat: 36.1996556, lng: -115.2668344};
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: myLatLng
