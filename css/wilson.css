@@ -54,7 +54,7 @@ p{
     padding: 0 5%;
 }
 
-main img{
+#about img, #experience img, #education img, #forfun img{
     display: block;
     width: 90%;
     margin: auto;
@@ -297,11 +297,6 @@ footer{
     margin: 1% auto;
     padding: 0 3%;
     transition: 0.3s ease;
-}
-
-#contact img{
-    border: none;
-    border-radius: 0%;
 }
 
 #socialLinks img{
