@@ -168,10 +168,14 @@ function lasVegasSign(){
     document.getElementById("vegas").src = "images/LasVegasSign.jpg"
 }
 
-var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 36.208, lng: -115.270 },
-    zoom: 11   
-  });
+    var myLatLng = {lat: 36.200, lng: -115.275};
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 11,
+    center: myLatLng
+    });
+    var marker = new google.maps.Marker({
+    position: myLatLng,    
+    });
+    marker.setMap(map);
 }
