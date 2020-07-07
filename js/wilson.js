@@ -144,32 +144,38 @@ $(document).ready(function(){
     });
 });
 
-function uclaBruins(){
-    document.getElementById("ucla").src = "images/UCLABruins.jpg"    
-}
-
-function royceHall(){
-    document.getElementById("ucla").src = "images/UCLA.jpg"
-}
-
 function redRockLogo(){
-    document.getElementById("redRock").src = "images/RedRockLogo.jpg"
+    document.getElementById("redRock").src = "images/RedRockLogo.jpg";
+    document.getElementById("redRock").alt = "Red Rock Logo"
 }
 
 function redRockCasino(){
-    document.getElementById("redRock").src = "images/RedRock.jpg"
+    document.getElementById("redRock").src = "images/RedRock.jpg";
+    document.getElementById("redRock").alt = "Red Rock Casino entrance"
+}
+
+function uclaBruins(){
+    document.getElementById("ucla").src = "images/UCLABruins.jpg";
+    document.getElementById("ucla").alt = "UCLA Bruins Logo"
+}
+
+function royceHall(){
+    document.getElementById("ucla").src = "images/UCLA.jpg";
+    document.getElementById("ucla").alt = "Royce Hall at UCLA"
 }
 
 function lasVegasStrip(){
-    document.getElementById("vegas").src = "images/LasVegasStrip.jpg"
+    document.getElementById("vegas").src = "images/LasVegasStrip.jpg";
+    document.getElementById("vegas").alt = "Night view of the Las Vegas Strip"
 }
 
 function lasVegasSign(){
-    document.getElementById("vegas").src = "images/LasVegasSign.jpg"
+    document.getElementById("vegas").src = "images/LasVegasSign.jpg";
+    document.getElementById("vegas").alt = "The famous Las Vegas Sign"
 }
 
 function initMap() {
-    var myLatLng = {lat: 36.1996556, lng: -115.2668344};
+    var myLatLng = {lat: 36.202785, lng: -115.270126};
     var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: myLatLng
