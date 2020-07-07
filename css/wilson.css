@@ -42,6 +42,10 @@ h4{
     text-align: center;
 }
 
+.grading{
+    color: #E0FBFC;
+}
+
 #about h3{
     color: #EE6C4D;
 }
@@ -535,6 +539,10 @@ textarea{
 }
 
 @media only screen and (orientation:landscape){
+
+.grading{
+    color: #293241;
+}
 
 #about{
     padding: 10% 3%;
