@@ -38,7 +38,28 @@ th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
 .current{width: 15%; text-align: left; font-size: 2rem;}
 }
 
-@media only screen and (orientation: landscape){}
+@media only screen and (orientation: landscape){
+body{text-align: left;}       
+.icon{width: 40px; margin-right: 5%;}
+.iconContainer{width: 25%; margin: 0 5% 3% 2%;}
+#bullets{width: 100%; vertical-align: top;}
+.left{display: inline-block; width: 20%; vertical-align: top; margin: 5% 5% 5% 0;}
+.right{display: inline-block; width: 70%; vertical-align: top; margin-top: 5%;}
+#pokerRoom{padding-top: 9%;}        
+h1, h2{font-size: 1.5rem; font-weight: none;}        
+ul{width: 26%; display: inline-block; vertical-align: top;}
+li{width: 100%;}
+#royalImg{width: 25%;}
+#promotions img{display: inline-block; margin-bottom: 5%;}
+#highHands{display: inline-block; width: 65%; margin-left: 5%; vertical-align: top;}
+#royal, #stflush {font-size: 1.5rem; margin-bottom: 5%; text-align: left;}
+table{font-size: 1.25rem; padding: 5% 2%; line-height: 2rem;}
+th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
+#currentText{font-size: 1.25rem;}
+.suit{width: 20%; text-align: left;}
+.amount{width: 20%; text-align: right;}
+.current{width: 15%; text-align: left; font-size: 2rem;}
+}
 
 @media only screen and (min-width: 992px){
 body{margin: 0 20% 10% 20%; text-align: left;}     
