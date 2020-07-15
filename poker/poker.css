@@ -62,5 +62,8 @@ th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
 }
 
 @media only screen and (min-width: 992px){
-body{margin: 0 20% 10% 20%; text-align: left;}     
+body{margin: 0 20% 10% 20%; text-align: left;} 
+table{font-size: 1.35rem; padding: 5%; line-height: 2rem;}
+th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
+#currentText{font-size: 1.25rem;}    
 }
