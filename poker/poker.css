@@ -9,7 +9,7 @@ h2{margin-top: 15%;}
 #bullets{text-align: left;}
 #royalImg{width: 25%;}
 #royal, #stflush {font-size: 1.1rem; margin: 5% 0;}
-table{border: solid 5px black; width: 100%; padding: 5%; font-size: 1.1rem; line-height: 2rem;}
+table{border: solid 5px black; width: 100%; padding: 5% 1%; font-size: 1.1rem; line-height: 2rem;}
 th{text-align: center; font-size: 1.15rem; padding-bottom: 5%;}
 #currentText{text-align: center; font-size: 0.9rem;}
 .suit{width: 20%; text-align: left; padding: 0 5%;}
@@ -30,7 +30,7 @@ li{width: 100%;}
 #promotions img{display: inline-block; margin-bottom: 5%;}
 #highHands{display: inline-block; width: 65%; margin-left: 5%; vertical-align: top;}
 #royal, #stflush {font-size: 1.5rem; margin-bottom: 5%; text-align: left;}
-table{border: solid 5px black; width: 100%; font-size: 1.25rem; padding: 5%; line-height: 2rem;}
+table{font-size: 1.25rem; padding: 5%; line-height: 2rem;}
 th{text-align: center; font-size: 2rem; padding-bottom: 5%;}
 #currentText{font-size: 1.25rem;}
 .suit{width: 20%; text-align: left; padding: 0 5%;}
