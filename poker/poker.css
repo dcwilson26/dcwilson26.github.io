@@ -39,7 +39,7 @@ th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
 }
 
 @media only screen and (orientation: landscape){
-body{margin: 0 20% 10% 20%; text-align: left;}       
+body{margin: 0 5% 10% 5%; text-align: left;}       
 .icon{width: 40px; margin-right: 5%;}
 .iconContainer{width: 35%; margin: 0 5% 3% 2%;}
 #bullets{width: 100%; vertical-align: top;}
