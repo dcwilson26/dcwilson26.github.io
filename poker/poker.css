@@ -5,22 +5,21 @@ h1, h2{font-size: 1.5rem; font-weight: none;}
 h2{margin-top: 15%;}
 .icon{width: 30px; margin: 0 3% 0 5%;}
 .iconContainer{display: inline-block; width: 35%; margin: 0 0 3% 0;}
-#list{width: 70%; text-align: center; margin: 0 auto;}
-#bullets{text-align: left;}
+#bullets{ width: 60%; text-align: left; margin: 0 auto;}
 #royalImg{width: 35%;}
 #royal, #stflush {font-size: 1.1rem; margin: 5% 0;}
 table{border: solid 5px black; width: 100%; padding: 5% 1%; font-size: 1.1rem; line-height: 2rem;}
 th{text-align: center; font-size: 1.15rem; padding-bottom: 5%;}
 #currentText{text-align: center; font-size: 0.9rem;}
-.suit{width: 20%; text-align: left; padding: 0 3%;}
-.amount{width: 20%; text-align: right;}
-.current{width: 15%; text-align: left; font-size: 2rem;}
+.suit{width: 20%; text-align: left; padding: 0 2%;}
+.amount{width: 25%; text-align: right; padding: 0 2%;}
+.current{width: 10%; text-align: left; font-size: 2rem;}
 
 @media only screen and (min-width: 768px){
 body{text-align: left;}       
 .icon{width: 40px; margin-right: 5%;}
 .iconContainer{width: 25%; margin: 0 5% 3% 2%;}
-#list{width: 100%; vertical-align: top;}
+#bullets{width: 100%; vertical-align: top;}
 .left{display: inline-block; width: 20%; vertical-align: top; margin: 5% 5% 5% 0;}
 .right{display: inline-block; width: 70%; vertical-align: top; margin-top: 5%;}
 #pokerRoom{padding-top: 9%;}        
@@ -31,15 +30,15 @@ li{width: 100%;}
 #promotions img{display: inline-block; margin-bottom: 5%;}
 #highHands{display: inline-block; width: 65%; margin-left: 5%; vertical-align: top;}
 #royal, #stflush {font-size: 1.5rem; margin-bottom: 5%; text-align: left;}
-table{font-size: 1.25rem; padding: 5%; line-height: 2rem;}
-th{text-align: center; font-size: 2rem; padding-bottom: 5%;}
+table{font-size: 1.25rem; padding: 5% 2%; line-height: 2rem;}
+th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
 #currentText{font-size: 1.25rem;}
-.suit{width: 20%; text-align: left; padding: 0 5%;}
+.suit{width: 20%; text-align: left;}
 .amount{width: 20%; text-align: right;}
-.current{width: 10%; text-align: left; font-size: 2rem;}
+.current{width: 15%; text-align: left; font-size: 2rem;}
 }
 
-@media (orientation: landscape){}
+@media only screen and (orientation: landscape){}
 
 @media only screen and (min-width: 992px){
 body{margin: 0 20% 10% 20%; text-align: left;}     
