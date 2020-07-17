@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors Lizard Spock</title>
+        <link rel="stylesheet" href="RPSLS.css">        
+    </head>
+    <body>
+        <h1>ROCK PAPER <span class="red">SCiSSORS LiZARD</span> SPOCK</h1>
+        <div class="left">
+        <div id="imageContainer">      
+        <img  id="image" src="RPSLS.png" usemap="#imageMap" alt="Rock Paper Scissors Lizard Spock">
+        <map name="imageMap">
+            <area id="Scissors" shape="circle" coords="122,40,40" onclick="shoot(1)" style="cursor: pointer;">
+            <area id="Spock" shape="circle" coords="41,102,40" onclick="shoot(2)" style="cursor: pointer;">
+            <area id="Paper" shape="circle" coords="210,102,40" onclick="shoot(3)" style="cursor: pointer;">
+            <area id="Lizard" shape="circle" coords="72,202,40" onclick="shoot(4)" style="cursor: pointer;">
+            <area id="Rock" shape="circle" coords="177,202,40" onclick="shoot(5)" style="cursor: pointer;">
+        </map>
+        </div>
+        </div>        
+        <div class="right">
+            <div id="dataContainer">                
+                <div class="resultLeft" id="resultContainer">Result: </div><div class="resultRight" id="result"></div><br>
+                <div class="resultLeft" id="yourGuess">You: </div><div class="resultRight" id="you"></div><br>
+                <div class="resultLeft" id="sheldonGuess">Sheldon: </div><div class="resultRight" id="sheldon"></div><br>                 
+                <div class="resultLeft" id="winCount">Wins: </div><div class="resultRight" id="wins">0</div><br>
+                <div class="resultLeft" id="lossCount">Losses: </div><div class="resultRight" id="losses">0</div><br>
+                <div class="resultLeft" id="tieCount">Ties: </div><div class="resultRight" id="ties">0</div><br>
+                <button id="reset" onclick="reset()" style="cursor: pointer;">Reset Score</button>
+            </div>        
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="RPSLS.js"></script>
+</html>
