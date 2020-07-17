@@ -21,8 +21,6 @@ function media(x) {
     }
 }
 
-
-
 var w = 0;
 var l = 0;
 var t = 0;
@@ -59,4 +57,7 @@ function reset(){
     document.getElementById("wins").innerHTML=0;
     document.getElementById("losses").innerHTML=0;
     document.getElementById("ties").innerHTML=0;
+    w = 0;
+    l = 0;
+    t = 0;
 }
