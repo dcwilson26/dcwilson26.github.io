@@ -20,6 +20,9 @@
     </header>
     <main>
         <h1>High/Low Game</h1>
+        <div id="backContainer">
+            <input class="button" name="back" id="back" type="submit" value="Main Menu" onclick="mainMenu()" style="cursor: pointer;">
+        </div>
         <div class="left">
             <label id="label" for="guess"></label><br>
             <input name="guess" id="guess" type="number"><br>
@@ -28,7 +31,7 @@
         </div>
         <div class="right">
             <div id="resultContainer">
-                <div class="dataLeft">Result: </div><div class="dataRight" id="result"></div>
+                <div class="dataLeft">Last Guess: </div><div class="dataRight" id="result"></div>
             </div>
             <div id="numberContainer">
                 <div class="dataLeft">Number of Guesses: </div><div class="dataRight" id="guesses"></div>

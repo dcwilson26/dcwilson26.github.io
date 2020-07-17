@@ -14,6 +14,11 @@ function game(x){
     d = x;
 }
 
+function mainMenu(){
+    $("main").fadeOut(1000);
+    $("header").delay(1000).fadeIn(1000);
+}
+
 function newGame(){
     var listItems = document.getElementById("list");
     var li = document.getElementsByTagName("li").length;
@@ -47,14 +52,15 @@ function submitGuess(){
         alert("Please type a whole number between "+formatNumber(min)+" and "+formatNumber(max));
         document.getElementById("guess").value=null;
     }   else if(g==n){
-            document.getElementById("result").innerHTML="Correct";
+            document.getElementById("result").innerHTML="Correct! ("+formatNumber(Math.floor(g))+")";
             l++;
             document.getElementById("guesses").innerHTML=l;
             list.innerHTML="Correct! ("+formatNumber(Math.floor(g))+")";
             document.getElementById("list").appendChild(list);
+            document.getElementById("list").scrollTop = document.getElementById("list").scrollHeight;
             document.getElementById("guess").value=null;
         }   else if(g<n){
-                document.getElementById("result").innerHTML="Higher";
+                document.getElementById("result").innerHTML="Higher ("+formatNumber(Math.floor(g))+")";
                 l++;
                 min = Math.floor(g)+1;                
                 document.getElementById("guesses").innerHTML=l;
@@ -65,9 +71,10 @@ function submitGuess(){
                         document.getElementById("label").innerHTML="The number has to be "+formatNumber(min)+". Type it in!";
                     }
                 document.getElementById("list").appendChild(list);
+                document.getElementById("list").scrollTop = document.getElementById("list").scrollHeight;
                 document.getElementById("guess").value=null;          
             }   else{
-                    document.getElementById("result").innerHTML="Lower";
+                    document.getElementById("result").innerHTML="Lower ("+formatNumber(Math.floor(g))+")";
                     l++;
                     max = Math.floor(g)-1;                    
                     document.getElementById("guesses").innerHTML=l;
@@ -78,6 +85,7 @@ function submitGuess(){
                             document.getElementById("label").innerHTML="The number has to be "+formatNumber(min)+". Type it in!";
                         }                    
                     document.getElementById("list").appendChild(list);
+                    document.getElementById("list").scrollTop = document.getElementById("list").scrollHeight;
                     document.getElementById("guess").value=null;
                 }
 }
