@@ -9,7 +9,7 @@ h1{font-size: 1.1rem; text-align: center; font-weight: normal;}
 h2{text-align: center; font-size: 1rem; font-weight: normal;}
 .left, .right{text-align: center;}
 .right{font-size: 1.1rem;}
-#dataContainer{text-align: center; margin: auto; width: 250px;}
+#dataContainer{text-align: center; margin: auto; width: 320px;}
 .resultLeft, .resultRight{display: inline-block;}
 .resultLeft{width: 45%; margin-right: 5%; text-align: right;}
 .resultRight{width: 45%; margin-left: 5%; text-align: left;}
@@ -31,7 +31,7 @@ p{text-align: center; font-size: 1rem; width: 80%; margin: 0 auto;}
 h1{font-size: 1.1rem; text-align: center; font-weight: normal;}
 h1 .red{color: #c9232a;}
 .left, .right{text-align: center;}
-#dataContainer{text-align: center; margin: auto; width: 250px;}
+#dataContainer{text-align: center; margin: auto; width: 320px;}
 .resultLeft, .resultRight{display: inline-block;}
 .resultLeft{width: 45%; margin-right: 5%; text-align: right;}
 .resultRight{width: 45%; margin-left: 5%; text-align: left;}

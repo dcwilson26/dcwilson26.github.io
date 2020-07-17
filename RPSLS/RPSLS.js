@@ -2,6 +2,8 @@ var x = window.matchMedia("(min-width: 1200px)")
 var sm = ["122,40,40","41,102,40","210,102,40","72,202,40","177,202,40"]
 var lg = ["245,80,80","83,204,80","421,204,80","144,405,80","354,405,80"]
 var pick = ["SCiSSORS","SPOCK","PAPER","LiZARD","ROCK"]
+var loss = document.getElementById("bazingaAudio")
+var toggle = 0
 media(x)
 x.addListener(media)
 
@@ -44,6 +46,9 @@ function shoot(g){
             l++;
             document.getElementById("losses").innerHTML=l;
             document.getElementById("bazinga").style.display="inline-block";
+                if(toggle==1){
+                    loss.play();
+                    }else{}
         }else{
             document.getElementById("result").innerHTML="YOU WiN";
             document.getElementById("result").style.color="#86de86";
@@ -63,4 +68,13 @@ function reset(){
     w = 0;
     l = 0;
     t = 0;
+}
+
+function audioToggle(){
+    if(toggle==0){
+        document.getElementById("volume").src="VolumeOn.png";
+        toggle=1
+    }   else {
+            document.getElementById("volume").src="VolumeMute.png";
+            toggle=0}
 }

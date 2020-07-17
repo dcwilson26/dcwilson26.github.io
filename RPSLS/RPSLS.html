@@ -24,7 +24,7 @@
         <div class="right">
             <div id="dataContainer">
                 <div id="bazingaContainer"><img id="bazinga" src="Bazinga.png" alt="Bazinga! You lose!"></div>              
-                <div class="resultLeft" id="resultContainer">RESULT: </div><div class="resultRight" id="result"></div><br>
+                <div class="resultLeft" id="resultContainer"><img id="volume" src="VolumeMute.png" onclick="audioToggle()" style="cursor: pointer;"> RESULT: </div><div class="resultRight" id="result"></div><br>
                 <div class="resultLeft" id="yourGuess">YOU: </div><div class="resultRight" id="you"></div><br>
                 <div class="resultLeft" id="sheldonGuess">SHELDON: </div><div class="resultRight" id="sheldon"></div><br>                 
                 <div class="resultLeft" id="winCount">WiNS: </div><div class="resultRight" id="wins">0</div><br>
@@ -35,7 +35,10 @@
         </div>
         <div id="rules">
             <p>"Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."<br><span class="red">- Sheldon Cooper</span></p>
-        </div>
+        </div>        
+        <audio id="bazingaAudio">
+            <source src="bazinga.mp3" type="audio/mpeg">
+        </audio>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="RPSLS.js"></script>
