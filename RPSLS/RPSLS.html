@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors Lizard Spock</title>
-        <link rel="stylesheet" href="RPSLS.css">        
+        <link rel="stylesheet" href="RPSLS.css">  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>      
     </head>
     <body>
         <h1>ROCK PAPER <span class="red">SCiSSORS LiZARD</span> SPOCK</h1>
@@ -24,7 +25,7 @@
         <div class="right">
             <div id="dataContainer">
                 <div id="bazingaContainer"><img id="bazinga" src="Bazinga.png" alt="Bazinga! You lose!"></div>              
-                <div class="resultLeft" id="resultContainer"><img id="volume" src="VolumeMute.png" onclick="audioToggle()" style="cursor: pointer;"> RESULT: </div><div class="resultRight" id="result"></div><br>
+                <div class="resultLeft" id="resultContainer"><img id="volume" src="VolumeMute.png" alt="Volume Toggle" onclick="audioToggle()" style="cursor: pointer;"> RESULT: </div><div class="resultRight" id="result"></div><br>
                 <div class="resultLeft" id="yourGuess">YOU: </div><div class="resultRight" id="you"></div><br>
                 <div class="resultLeft" id="sheldonGuess">SHELDON: </div><div class="resultRight" id="sheldon"></div><br>                 
                 <div class="resultLeft" id="winCount">WiNS: </div><div class="resultRight" id="wins">0</div><br>
@@ -39,7 +40,6 @@
         <audio id="bazingaAudio">
             <source src="bazinga.mp3" type="audio/mpeg">
         </audio>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </body>    
     <script src="RPSLS.js"></script>
 </html>
