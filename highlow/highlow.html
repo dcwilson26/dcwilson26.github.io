@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High/Low Game</title>
+    <link rel="stylesheet" href="highlow.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>
+<body>
+    <header>
+        <h1>High/Low Game</h1>
+        <div id="choose">Choose your difficulty:</div>
+        <div class="difficulty" id="easy" onclick="game(10)" style="cursor: pointer;">Easy<br>(1 to 10)</div>
+        <div class="difficulty" id="medium" onclick="game(100)" style="cursor: pointer;">Medium<br>(1 to 100)</div>
+        <div class="difficulty" id="hard" onclick="game(1000)" style="cursor: pointer;">Hard<br>(1 to 1,000)</div>
+        <div class="difficulty" id="veryHard" onclick="game(10000)" style="cursor: pointer;">Very Hard<br>(1 to 10,000)</div>
+        <div class="difficulty" id="extreme" onclick="game(100000)" style="cursor: pointer;">Extreme<br>(1 to 100,000)</div>
+        <div class="difficulty" id="insane" onclick="game(1000000)" style="cursor: pointer;">Insane<br>(1 to 1,000,000)</div>        
+    </header>
+    <main>
+        <h1>High/Low Game</h1>
+        <div class="left">
+            <label id="label" for="guess"></label><br>
+            <input name="guess" id="guess" type="number"><br>
+            <input class="button" name="submit" id="submit" type="submit" value="Submit Guess" onclick="submitGuess()" style="cursor: pointer;">
+            <input class="button" name="reset" id="reset" type="reset" value="New Game" onclick="newGame()" style="cursor: pointer;">
+        </div>
+        <div class="right">
+            <div id="resultContainer">
+                <div class="dataLeft">Result: </div><div class="dataRight" id="result"></div>
+            </div>
+            <div id="numberContainer">
+                <div class="dataLeft">Number of Guesses: </div><div class="dataRight" id="guesses"></div>
+            </div>
+            <div id="guessList">Your Guesses: </div>
+            <ol id="list">
+            </ol>            
+        </div>
+        <div id="test"></div>
+    </main>
+
+
+
+
+
+
+
+<script src="highlow.js"></script>
+</body>
+</html>
