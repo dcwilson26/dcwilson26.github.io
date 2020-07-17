@@ -78,3 +78,8 @@ function audioToggle(){
             document.getElementById("volume").src="VolumeMute.png";
             toggle=0}
 }
+
+$("#begin").click(function(){
+    $("header").fadeOut(1000);        
+    $("main").delay(1000).fadeIn(1000);
+})

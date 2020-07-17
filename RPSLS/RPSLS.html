@@ -4,9 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors Lizard Spock</title>
-        <link rel="stylesheet" href="RPSLS.css">                
-    </head>
+        <link rel="stylesheet" href="RPSLS.css">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>             
+    </head>    
     <body>
+    <header>
+        <div id="intro">ROCK PAPER <span class="red">SCiSSORS LiZARD</span> SPOCK</div>
+        <img id="sheldonIntro" src="Sheldon.png" alt="Sheldon Cooper">
+        <div id="taunt">So you think you can beat <span class="red">ME</span> at my own game, do you?<br>We'll just see have to about that!</div>
+        <button id="begin" style="cursor: pointer;">BEGiN!</button>
+    </header>
+    <main>
         <h1>ROCK PAPER <span class="red">SCiSSORS LiZARD</span> SPOCK</h1>
         <div class="left">
             <h2>CHOOSE YOUR WEAPON:</h2>
@@ -39,7 +47,7 @@
         <audio id="bazingaAudio">
             <source src="bazinga.mp3" type="audio/mpeg">
         </audio>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </main>    
     <script src="RPSLS.js"></script>
     </body>    
     

@@ -2,6 +2,9 @@
     font-family: Impact;
     src: url(impact.ttf);
 }
+main{display: none;}
+header{text-align: center; font-size: 1.5rem; margin: 5% 10%;}
+#sheldonIntro{height: 300px;}
 body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 #image{width: 250px; margin-top: 1%;}
 h1{font-size: 1.1rem; text-align: center; font-weight: normal;}
@@ -45,7 +48,7 @@ button{width: 125px; padding: 10px; margin: 5%; font-size: 1.15rem; font-weight:
 }
 
 @media only screen and (min-width: 768px){
-body{margin: 5%;}
+main{margin: 5%;}
 #image{margin-top: 1%;}
 h1{font-size: 2rem;}
 .left, .right{width: 45%; display: inline-block; margin: 5% auto; vertical-align: top;}
@@ -55,7 +58,7 @@ h1{font-size: 2rem;}
 }
 
 @media only screen and (orientation: landscape){
-body{margin: 5%;}
+main{margin: 5%;}
 #image{margin-top: 1%;}
 h1{font-size: 2rem;}
 .left, .right{width: 45%; display: inline-block; margin: auto; vertical-align: top;}
@@ -65,7 +68,9 @@ h1{font-size: 2rem;}
 }
 
 @media only screen and (min-width: 1200px){
-body{margin: 2% 10%;}
+main{margin: 2% 10%;}
+header{text-align: center; font-size: 2rem; margin: 5% 10%;}
+#sheldonIntro{height: 400px;}
 #image{width: 500px;}
 h1{font-size: 3rem;}
 h2{font-size: 2rem;}
