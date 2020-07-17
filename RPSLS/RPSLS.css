@@ -2,23 +2,28 @@
     font-family: Impact;
     src: url(impact.ttf);
 }
-
+body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 #image{width: 250px; margin-top: 1%;}
-h1{font-size: 1.1rem; text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: normal;}
-h1 .red{color: #c9232a;}
+h1{font-size: 1.1rem; text-align: center; font-weight: normal;}
+.red{color: #c9232a;}
+h2{text-align: center; font-size: 1rem; font-weight: normal;}
 .left, .right{text-align: center;}
 #dataContainer{text-align: center; margin: auto; width: 250px;}
 .resultLeft, .resultRight{display: inline-block;}
 .resultLeft{width: 45%; margin-right: 5%; text-align: right;}
 .resultRight{width: 45%; margin-left: 5%; text-align: left;}
 #resultContainer, #result{margin-top: 5%; margin-bottom: 5%; font-size: 1.5rem;}
+#bazingaContainer{height: 100px; text-align: center;}
+#bazinga{height: 100%; display: none;}
 #result, #you, #sheldon, #wins, #losses, #ties{text-shadow: 1px 1px #000000;}
 #winCount{margin-top: 5%;}
 #wins{color: #86de86; margin-top: 5%;}
 #losses{color: #ff8080;}
 #ties{color: #ffdd54;}
-button{width: 100px; padding: 10px; margin: 5%; color: #FFFFFF; background-color: #c9232a;}
+button{width: 125px; padding: 10px; margin: 5%; font-size: 1.15rem; font-weight: normal; background-color: #c9232a; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 button:hover{background-color: #ff8080;}
+#rules{text-align: center;}
+p{text-align: center; font-size: 1rem; width: 80%; margin: 0 auto;}
 
 @media only screen and (orientation: portrait){
 #image{width: 250px; margin-top: 1%;}
@@ -35,7 +40,7 @@ h1 .red{color: #c9232a;}
 #wins{color: #86de86; margin-top: 5%;}
 #losses{color: #ff8080;}
 #ties{color: #ffdd54;}
-button{width: 100px; padding: 10px; margin: 5%; color: #FFFFFF; background-color: #c9232a;}
+button{width: 125px; padding: 10px; margin: 5%; font-size: 1.15rem; font-weight: normal; background-color: #c9232a; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 button:hover{background-color: #ff8080;}    
 }
 
@@ -60,11 +65,14 @@ h1{font-size: 2rem;}
 }
 
 @media only screen and (min-width: 1200px){
+body{margin: 5% 10%;}
 #image{width: 500px;}
 h1{font-size: 3rem;}
+h2{font-size: 2rem;}
 .right{font-size: 2rem;}
 #resultContainer, #result{font-size: 2.5rem;}
-#imageContainer{padding-left: 20%;}
-#dataContainer{padding-right: 20%;}
-button{width: 150px;}
+#bazingaContainer{height: 175px;}
+button{width: 175px;}
+#rules{margin-top: 5%;}
+p{width: 60%; font-size: 1.25rem;}
 }

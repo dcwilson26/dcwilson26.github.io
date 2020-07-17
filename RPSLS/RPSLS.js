@@ -1,7 +1,7 @@
 var x = window.matchMedia("(min-width: 1200px)")
 var sm = ["122,40,40","41,102,40","210,102,40","72,202,40","177,202,40"]
 var lg = ["245,80,80","83,204,80","421,204,80","144,405,80","354,405,80"]
-var pick = ["Scissors","Spock","Paper","Lizard","Rock"]
+var pick = ["SCiSSORS","SPOCK","PAPER","LiZARD","ROCK"]
 media(x)
 x.addListener(media)
 
@@ -32,18 +32,20 @@ function shoot(g){
     document.getElementById("sheldon").style.color=color[s-1];
     document.getElementById("you").innerHTML=pick[g-1];
     document.getElementById("you").style.color=color[g-1];
+    document.getElementById("bazinga").style.display="none";
     if(s==g){
-        document.getElementById("result").innerHTML="Tie";
+        document.getElementById("result").innerHTML="WE TiED";
         document.getElementById("result").style.color="#ffdd54";
         t++;
         document.getElementById("ties").innerHTML=t;
         }else if((g==1 && (s==2 || s==5)) || (g==2 && (s==3 || s==4)) || (g==3 && (s==1 || s==4)) || (g==4 && (s==1 || s==5)) || (g==5 && (s==2 || s==3))){
-            document.getElementById("result").innerHTML="You Lose";
+            document.getElementById("result").innerHTML="YOU LOSE";
             document.getElementById("result").style.color="#ff8080";
             l++;
             document.getElementById("losses").innerHTML=l;
+            document.getElementById("bazinga").style.display="inline-block";
         }else{
-            document.getElementById("result").innerHTML="You Win";
+            document.getElementById("result").innerHTML="YOU WiN";
             document.getElementById("result").style.color="#86de86";
             w++;
             document.getElementById("wins").innerHTML=w;
@@ -57,6 +59,7 @@ function reset(){
     document.getElementById("wins").innerHTML=0;
     document.getElementById("losses").innerHTML=0;
     document.getElementById("ties").innerHTML=0;
+    document.getElementById("bazinga").style.display="none";
     w = 0;
     l = 0;
     t = 0;
