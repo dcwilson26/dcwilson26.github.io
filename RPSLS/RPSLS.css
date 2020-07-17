@@ -16,22 +16,22 @@ button{width: 100px; padding: 10px; margin: 5%; color: #FFFFFF; background-color
 button:hover{background-color: #ff8080;}
 
 @media only screen and (orientation: portrait){
-    #image{width: 250px; margin-top: 1%;}
-    h1{font-size: 1.1rem; text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
-    h1 .red{color: #c9232a;}
-    .left, .right{text-align: center;}
-    #dataContainer{text-align: center; margin: auto; width: 250px;}
-    .resultLeft, .resultRight{display: inline-block;}
-    .resultLeft{width: 45%; margin-right: 5%; text-align: right;}
-    .resultRight{width: 45%; margin-left: 5%; text-align: left;}
-    #resultContainer, #result{margin-top: 5%; margin-bottom: 5%; font-size: 1.5rem;}
-    #result, #you, #sheldon, #wins, #losses, #ties{text-shadow: 1px 1px #000000;}
-    #winCount{margin-top: 5%;}
-    #wins{color: #86de86; margin-top: 5%;}
-    #losses{color: #ff8080;}
-    #ties{color: #ffdd54;}
-    button{width: 100px; padding: 10px; margin: 5%; color: #FFFFFF; background-color: #c9232a;}
-    button:hover{background-color: #ff8080;}    
+#image{width: 250px; margin-top: 1%;}
+h1{font-size: 1.1rem; text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+h1 .red{color: #c9232a;}
+.left, .right{text-align: center;}
+#dataContainer{text-align: center; margin: auto; width: 250px;}
+.resultLeft, .resultRight{display: inline-block;}
+.resultLeft{width: 45%; margin-right: 5%; text-align: right;}
+.resultRight{width: 45%; margin-left: 5%; text-align: left;}
+#resultContainer, #result{margin-top: 5%; margin-bottom: 5%; font-size: 1.5rem;}
+#result, #you, #sheldon, #wins, #losses, #ties{text-shadow: 1px 1px #000000;}
+#winCount{margin-top: 5%;}
+#wins{color: #86de86; margin-top: 5%;}
+#losses{color: #ff8080;}
+#ties{color: #ffdd54;}
+button{width: 100px; padding: 10px; margin: 5%; color: #FFFFFF; background-color: #c9232a;}
+button:hover{background-color: #ff8080;}    
 }
 
 @media only screen and (min-width: 768px){
@@ -39,8 +39,8 @@ body{margin: 5%;}
 #image{margin-top: 10%;}
 h1{font-size: 2rem;}
 .left, .right{width: 45%; display: inline-block; margin: 5% auto; vertical-align: top;}
-.right{font-size: 2rem;}
-#resultContainer, #result{font-size: 2.5rem;}
+.right{font-size: 1.1rem;}
+#resultContainer, #result{font-size: 1.5rem;}
 #dataContainer{width: 100%;}
 }
 
@@ -49,14 +49,16 @@ body{margin: 5%;}
 #image{margin-top: 10%;}
 h1{font-size: 2rem;}
 .left, .right{width: 45%; display: inline-block; margin: auto; vertical-align: top;}
-.right{font-size: 2rem;}
-#resultContainer, #result{font-size: 2.5rem;}
+.right{font-size: 1.1rem;}
+#resultContainer, #result{font-size: 1.5rem;}
 #dataContainer{width: 100%;}
 }
 
 @media only screen and (min-width: 1200px){
 #image{width: 500px; margin-top: 0;}
 h1{font-size: 3rem;}
+.right{font-size: 2rem;}
+#resultContainer, #result{font-size: 2.5rem;}
 #imageContainer{padding-left: 20%;}
 #dataContainer{padding-right: 20%;}
 button{width: 150px;}
