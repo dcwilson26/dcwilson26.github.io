@@ -11,19 +11,24 @@
     <header>
         <h1>High/Low Game</h1>
         <div id="choose">Choose your difficulty:</div>
-        <div class="difficulty" id="easy" onclick="game(10)" style="cursor: pointer;">Easy<br>(1 to 10)</div>
-        <div class="difficulty" id="medium" onclick="game(100)" style="cursor: pointer;">Medium<br>(1 to 100)</div>
-        <div class="difficulty" id="hard" onclick="game(1000)" style="cursor: pointer;">Hard<br>(1 to 1,000)</div>
-        <div class="difficulty" id="veryHard" onclick="game(10000)" style="cursor: pointer;">Very Hard<br>(1 to 10,000)</div>
-        <div class="difficulty" id="extreme" onclick="game(100000)" style="cursor: pointer;">Extreme<br>(1 to 100,000)</div>
-        <div class="difficulty" id="insane" onclick="game(1000000)" style="cursor: pointer;">Insane<br>(1 to 1,000,000)</div>        
+        <div id="options">
+            <div class="difficulty" id="easy" onclick="game(10)" style="cursor: pointer;">Easy<br>(1 to 10)</div>
+            <div class="difficulty" id="medium" onclick="game(100)" style="cursor: pointer;">Medium<br>(1 to 100)</div>
+            <div class="difficulty" id="hard" onclick="game(1000)" style="cursor: pointer;">Hard<br>(1 to 1,000)</div>        
+            <div class="difficulty" id="veryHard" onclick="game(10000)" style="cursor: pointer;">Very Hard<br>(1 to 10,000)</div>
+            <div class="difficulty" id="extreme" onclick="game(100000)" style="cursor: pointer;">Extreme<br>(1 to 100,000)</div>
+            <div class="difficulty" id="insane" onclick="game(1000000)" style="cursor: pointer;">Insane<br>(1 to 1,000,000)</div>
+        </div>         
     </header>
     <main>
         <h1>High/Low Game</h1>
         <div id="backContainer">
             <input class="button" name="back" id="back" type="submit" value="Main Menu" onclick="mainMenu()" style="cursor: pointer;">
+            <input class="button" name="winReset" id="winReset" type="reset" value="New Game" onclick="newGame()" style="cursor: pointer;">
+            <br><img src="https://tenor.com/view/mickey-mouse-good-job-nice-work-sparkling-gif-15538476" id="winImage" alt="Good Job!">
         </div>
-        <div class="left">
+        <div id="all">
+        <div class="left" id="left">
             <label id="label" for="guess"></label><br>
             <input name="guess" id="guess" type="number"><br>
             <input class="button" name="submit" id="submit" type="submit" value="Submit Guess" onclick="submitGuess()" style="cursor: pointer;">
@@ -40,15 +45,8 @@
             <ol id="list">
             </ol>            
         </div>
-        <div id="test"></div>
+        </div>
     </main>
-
-
-
-
-
-
-
 <script src="highlow.js"></script>
 </body>
 </html>

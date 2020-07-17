@@ -1,3 +1,28 @@
+html{scroll-behavior: smooth;}
+body{font-family: Georgia, 'Times New Roman', Times, serif;}
+main{display: none;}
+header{margin-bottom: 5%;}
+h1{font-size: 2rem; text-align: center; color: #264653;}
+#backContainer{text-align: center; margin-bottom: 10px;}
+#choose{font-size: 1.5rem; text-align: center; color: #e76f51;}
+.difficulty{display: block; width: 200px; text-align: center; font-size: 1.25rem; margin: 20px auto 0 auto; padding: 20px; border: solid 2px #264653; color: #FFFFFF; background-color: #2a9d8f;}
+.difficulty:active{background-color: #e9c46a; color: #264653;}
+#winReset{display: none;}
+#winImage{display: none; width: 300px;}
+#all{text-align: center;}
+.left, .right{text-align: center;}
+#label{display: inline-block; text-align: center; color: #e76f51; font-size: 1.1rem;}
+#guess{display: inline-block; text-align: center; height: 3rem; width: 300px; margin: 1% auto; font-size: 2.5rem; color: #264653;}
+.button{margin: 5px 5px 10px 5px; padding: 10px; width: 120px; border: solid 1px #264653; color: #FFFFFF; background-color: #2a9d8f; text-align: center;}
+.button:active{background-color: #e9c46a; color: #264653;}
+.dataLeft, .dataRight{display: inline-block; width: 40%; margin: 10px 10px 0 10px; color: #264653; font-size: 1.25rem;}
+.dataLeft{text-align: right; color: #264653}
+.dataRight{text-align: left; color: #e76f51;}
+#guessList{margin: 10px auto 5px auto; color: #2a9d8f; font-size: 1.5rem;}
+#list{width: 300px; height: 150px; border: solid 1px #264653; margin: auto; padding: 10px 5px; overflow: auto;}
+li{font-size: 1.5rem; width: 225px; margin: auto;}
+
+@media only screen and (orientation: portrait){
 body{font-family: Georgia, 'Times New Roman', Times, serif;}
 main{display: none;}
 h1{font-size: 2rem; text-align: center; color: #264653;}
@@ -16,3 +41,24 @@ h1{font-size: 2rem; text-align: center; color: #264653;}
 #guessList{margin: 10px auto 5px auto; color: #2a9d8f; font-size: 1.5rem;}
 #list{width: 300px; height: 150px; border: solid 1px #264653; margin: auto; padding: 10px 5px; overflow: auto;}
 li{font-size: 1.5rem; width: 225px; margin: auto;}
+}
+
+@media only screen and (orientation: landscape){
+#options{width: 100%; text-align: center;}
+.difficulty{display: inline-block; width: 300px; margin: 20px; font-size: 1.5rem;}
+#all{text-align: center;}
+.left, .right{display: inline-block; width: 40%; vertical-align: middle;}
+}
+
+@media only screen and (min-width: 1200px){
+body{margin: 2% 10%;}
+h1{font-size: 3rem;}
+#choose{font-size: 2rem; margin-bottom: 20px;}
+#winImage{width: 375px;}
+.difficulty:hover{background-color: #e9c46a; color: #264653;}
+.dataLeft, .dataRight{font-size: 1.5rem;}
+#label{font-size: 1.5rem;}
+#guess, #list{width: 375px;}
+.button{width: 185px; padding: 15px; font-size: 1.5rem;}
+.button:hover{background-color: #e9c46a; color: #264653;}
+}

@@ -4,24 +4,52 @@ var l = 0
 var min = 1
 var max = 2
 var d = 0
+var winning = ["Mickey.gif","Office.gif","Gorilla.gif","Charlie.gif","Simon.gif","Wolf.gif","Puppy.gif","Chuck.gif","Friends.gif","GoodJob.gif","Obama.gif","Modern.gif","Joker.gif","Dogs.gif","Will.gif","Tina.gif","Minions.gif","Ace.gif","Cookie.gif","Heidi.gif","Borat.gif","Fireworks.gif","Shia.gif"]
+var arrayLength = winning.length-1
 
 function game(x){
     $("header").fadeOut(1000);
     $("main").delay(1000).fadeIn(1000);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     document.getElementById("label").innerHTML="Guess a number between 1 and "+formatNumber(x)+":";
-    n = Math.floor(Math.random()*x)+1;    
+    n = Math.floor(Math.random()*x)+1; 
+    g = 0;
+    l = 0; 
+    min = 1;  
     max = x;
-    d = x;
+    d = x;      
+    var listItems = document.getElementById("list");
+    var li = document.getElementsByTagName("li").length;    
+    if(listItems.hasChildNodes()){  
+        for(i = li; i>0; i--){        
+            listItems.removeChild(listItems.childNodes[i]);
+        }
+    }       
+    $("#winReset").fadeOut(500);
+    $("#winImage").fadeOut(500);
+    document.getElementById("left").style.display="inline-block";     
+    document.getElementById("guesses").innerHTML=null;
+    document.getElementById("result").innerHTML=null;
 }
 
 function mainMenu(){
     $("main").fadeOut(1000);
     $("header").delay(1000).fadeIn(1000);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    n = 0;
+    g = 0;
+    l = 0;
+    min = 1;
+    max = 2;
+    document.getElementById("guesses").innerHTML=null;
+    document.getElementById("result").innerHTML=null;
 }
 
 function newGame(){
     var listItems = document.getElementById("list");
-    var li = document.getElementsByTagName("li").length;
+    var li = document.getElementsByTagName("li").length;    
     if(listItems.hasChildNodes()){  
         for(i = li; i>0; i--){        
             listItems.removeChild(listItems.childNodes[i]);
@@ -31,7 +59,10 @@ function newGame(){
     g = 0;
     l = 0;
     min = 1;
-    max = d;    
+    max = d;
+    $("#winReset").fadeOut(500);
+    $("#winImage").fadeOut(500);
+    document.getElementById("left").style.display="inline-block";        
     document.getElementById("guesses").innerHTML=null;
     document.getElementById("result").innerHTML=null;
     document.getElementById("label").innerHTML="Guess a number between 1 and "+formatNumber(d)+":";
@@ -45,7 +76,8 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-function submitGuess(){    
+function submitGuess(){
+    document.getElementById("winImage").src="";
     g = document.getElementById("guess").value;
     var list = document.createElement("li");
     if(g<min || g>max || Math.floor(g)!=g){
@@ -58,6 +90,11 @@ function submitGuess(){
             list.innerHTML="Correct! ("+formatNumber(Math.floor(g))+")";
             document.getElementById("list").appendChild(list);
             document.getElementById("list").scrollTop = document.getElementById("list").scrollHeight;
+            document.getElementById("left").style.display="none";            
+            var randImg = Math.floor(Math.random()*arrayLength);
+            document.getElementById("winImage").src=winning[randImg];
+            document.getElementById("winReset").style.display="Inline-block";
+            $("#winImage").fadeIn(500);          
             document.getElementById("guess").value=null;
         }   else if(g<n){
                 document.getElementById("result").innerHTML="Higher ("+formatNumber(Math.floor(g))+")";
