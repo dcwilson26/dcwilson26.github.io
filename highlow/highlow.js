@@ -5,7 +5,7 @@ var min = 1
 var max = 2
 var d = 0
 var winning = ["Mickey.gif","Office.gif","Gorilla.gif","Charlie.gif","Simon.gif","Wolf.gif","Puppy.gif","Chuck.gif","Friends.gif","GoodJob.gif","Obama.gif","Modern.gif","Joker.gif","Dogs.gif","Will.gif","Tina.gif","Minions.gif","Ace.gif","Cookie.gif","Heidi.gif","Borat.gif","Fireworks.gif","Shia.gif"]
-var arrayLength = winning.length-1
+var arrayLength = winning.length
 var level = "Null"
 
 function game(x){
