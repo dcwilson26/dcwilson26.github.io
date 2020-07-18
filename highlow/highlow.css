@@ -2,13 +2,14 @@ html{scroll-behavior: smooth;}
 body{font-family: Georgia, 'Times New Roman', Times, serif;}
 main{display: none;}
 header{margin-bottom: 5%;}
-h1{font-size: 2rem; text-align: center; color: #264653;}
+h1{font-size: 2rem; text-align: center; color: #264653; margin: 2% auto;}
 #backContainer{text-align: center; margin-bottom: 10px;}
-#choose{font-size: 1.5rem; text-align: center; color: #e76f51;}
+#choose{font-size: 1.5rem; text-align: center; color: #e76f51; margin-top: 5%;}
 .difficulty{display: block; width: 200px; text-align: center; font-size: 1.25rem; margin: 20px auto 0 auto; padding: 20px; border: solid 2px #264653; color: #FFFFFF; background-color: #2a9d8f;}
 .difficulty:active{background-color: #e9c46a; color: #264653;}
 #winReset{display: none;}
 #winImage{display: none; width: 300px;}
+#level{color: #2a9d8f; text-align: center; margin: 2% auto; font-size: 1.1rem;}
 #all{text-align: center;}
 .left, .right{text-align: center;}
 #label{display: inline-block; text-align: center; color: #e76f51; font-size: 1.1rem;}
@@ -57,6 +58,7 @@ body{margin: 2% 10%;}
 h1{font-size: 3rem;}
 #choose{font-size: 2rem; margin-bottom: 20px;}
 #winImage{width: 375px;}
+#level{font-size: 1.5rem;}
 .difficulty:hover{background-color: #e9c46a; color: #264653;}
 .dataLeft, .dataRight{font-size: 1.5rem;}
 #label{font-size: 1.5rem;}
