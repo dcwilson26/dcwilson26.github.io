@@ -227,79 +227,25 @@ footer{
     font-family: 'Galada', cursive, Arial, sans-serif;
 }
 
-#gameLeft, #gameRight{
-    display: block;
-    margin: auto;
-}
-
-#guessLabel{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #3D5A80;
-    text-shadow: 1px 1px #646464;
-}
-
-#result{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.25rem;
-    text-shadow: 1px 1px #646464;
-    margin: auto;
-}
-
-#numOfGuesses{
+.goToGame{
     display: inline-block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #EE6C4D;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px #646464;
-    margin: auto;
-}
-
-#forfun input[type="submit"], input[type="button"]{
     background-color: #3D5A80;
     border: none;
     color: #FFFFFF;
     font-size: 1.1rem;
     padding: 2% 3%;
-    text-decoration: none;
-    margin: 1%;
+    text-decoration: none;    
     border-radius: 25px;
     border: solid 1px #293241;
     box-shadow: 2px 2px 4px #293241, 2px 2px 4px #646464;
     cursor: pointer;
     outline: none;
-    transition: 0.3s ease;
+    transition: 0.3s ease;    
 }
 
-#forfun input[type="submit"]:active{
+.goToGame:active{
     background-color: #98C1D9;
     color: #293241;
-}
-
-#forfun input[type="button"]:active{
-    background-color: #98C1D9;
-    color: #293241;
-}
-
-#forfun #submitGuess{
-    display: none;
-}
-
-#output, #guess{
-    display: none;
-    color: #3D5A80;
-    width: 75%;
-    padding: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-#output{
-    font-size: 1.25rem;
-    height: 150px;
-    overflow: auto;
 }
 
 #contact{
@@ -656,54 +602,14 @@ textarea{
     text-align: center;
 }
 
-#gameLeft, #gameRight{
-    display: inline-block;
-    vertical-align: top;
-}
-
-#gameLeft{
-    width: 47%;
-}
-
-#gameRight{
-    width: 0%;
-}
-
-#guessLabel{
-    display: block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #3D5A80;
-    width: 90%;
-    margin: auto;
-    text-shadow: none;
-}
-
-#result{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-    text-shadow: none;
-    margin: auto;
-}
-
-#numOfGuesses{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #EE6C4D;
-    font-size: 1rem;
-    text-shadow: none;
-    margin: auto;
-}
-
-#forfun input[type="submit"], input[type="button"]{
+.goToGame{
     display: inline-block;
     background-color: #3D5A80;
     border: none;
     color: #FFFFFF;
     font-size: 0.8rem;
     padding: 1% 2%;
-    text-decoration: none;
-    margin: 1%;
+    text-decoration: none;    
     border-radius: 25px;
     border: solid 1px #293241;
     box-shadow: 2px 2px 4px #293241, 2px 2px 4px #646464;
@@ -711,24 +617,6 @@ textarea{
     outline: none;
 }
 
-#output, #guess{
-    width: 80%;
-    padding: 0.5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    margin: auto;
-}
-
-#guess{
-    margin: 5% auto;
-}
-
-#output{
-    color: #3D5A80;
-    font-size: 1rem;
-}
-    
 #contact input, textarea{
     font-size: 1rem;
 }
@@ -905,31 +793,7 @@ hr{
     background-color: #FFFFFF;
 }
 
-#guessLabel{
-    display: block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #3D5A80;
-    text-shadow: 1px 1px #646464;
-}
-
-#result{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px #646464;
-    margin: auto;
-}
-
-#numOfGuesses{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #EE6C4D;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px #646464;
-    margin: auto;
-}
-
-#forfun input[type="submit"], input[type="button"]{
+.goToGame{
     display: inline-block;
     background-color: #3D5A80;
     border: none;
@@ -937,7 +801,7 @@ hr{
     font-size: 1.1rem;
     padding: 2% 3%;
     text-decoration: none;
-    margin: 1%;
+    margin: 2%;
     border-radius: 25px;
     border: solid 1px #293241;
     box-shadow: 2px 2px 4px #293241, 2px 2px 4px #646464;
@@ -945,26 +809,9 @@ hr{
     outline: none;
 }
 
-#forfun input[type="submit"]:hover{
+.goToGame:hover{
     background-color: #98C1D9;
     color: #293241;
-}
-
-#forfun input[type="button"]:hover{
-    background-color: #98C1D9;
-    color: #293241;
-}
-
-#output, #guess{
-    padding: 1%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-#output{
-    color: #3D5A80;
-    font-size: 1.25rem;
 }
 
 #socialLinks img:active{

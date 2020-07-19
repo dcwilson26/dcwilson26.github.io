@@ -1,13 +1,3 @@
-window.onload=function(){
-    var input = document.getElementById("guess");
-    input.addEventListener("keypress", function(event){
-        if(event.keyCode === 13){
-        event.preventDefault();
-        document.getElementById("submitGuess").onclick();    
-        }
-    })
-}
-
 var m = window.matchMedia("(min-width:768px)")
 var l = window.matchMedia("(orientation:landscape")
 var xl = window.matchMedia("(min-width:992px)")
@@ -23,74 +13,6 @@ function navLinks(){
         }   else{
             x.style.display = "none"
     }
-}
-
-function yourGuess(){
-    var guess = document.getElementById("guess").value;
-    var guesses = document.getElementById("output");         
-    if(isNaN(guess) || guess < 1 || guess > 100 || guess - Math.floor(guess) !== 0){
-    document.getElementById("guess").value = "";
-    alert("Please enter a whole number between 1 and 100");
-    }   else if (guess == numToGuess){
-        var rows = document.getElementById("output").rows;
-        document.getElementById("output").rows = rows+1;
-        document.getElementById("guess").value = "";
-        var numOfGuesses = rows-2;
-        guesses.value = guesses.value + "\r" + numOfGuesses+".  Correct! ("+Math.floor(guess)+")";
-        guesses.scrollTop = guesses.scrollHeight;
-            if(numOfGuesses == 1){
-            document.getElementById("result").innerHTML = "WOW! It took you only ";
-            document.getElementById("numOfGuesses").innerHTML = numOfGuesses+" guess.";
-            document.getElementById("guessLabel").style.display = "none";
-            document.getElementById("guess").style.display = "none";
-            document.getElementById("submitGuess").style.display = "none";          
-            }   else{
-                document.getElementById("result").innerHTML = "Good job! It took you ";
-                document.getElementById("numOfGuesses").innerHTML = numOfGuesses+" guesses.";
-                document.getElementById("guessLabel").style.display = "none";
-                document.getElementById("guess").style.display = "none";
-                document.getElementById("submitGuess").style.display = "none";                
-            }
-    }   else if (guess > numToGuess){
-        var rows = document.getElementById("output").rows;
-        document.getElementById("output").rows = rows+1;
-        document.getElementById("guess").value = "";
-        var numOfGuesses = rows-2
-        guesses.value = guesses.value + "\r" + numOfGuesses+".  Lower ("+Math.floor(guess)+")";
-        guesses.scrollTop = guesses.scrollHeight;
-        document.getElementById("numOfGuesses").innerHTML = numOfGuesses;
-        }   else{
-            var rows = document.getElementById("output").rows;
-            document.getElementById("output").rows = rows+1;
-            document.getElementById("guess").value = "";
-            var numOfGuesses = rows-2
-            guesses.value = guesses.value + "\r" + numOfGuesses+".  Higher ("+Math.floor(guess)+")";
-            guesses.scrollTop = guesses.scrollHeight;
-            document.getElementById("numOfGuesses").innerHTML = numOfGuesses;
-    }
-}
-    
-function newGame(){
-    document.getElementById("guessLabel").style.display = "inline-block";
-    document.getElementById("guessLabel").innerHTML = "Guess a number between 1 and 100";
-    document.getElementById("guess").value = "";
-    document.getElementById("result").innerHTML = "Number of guesses: ";
-    document.getElementById("numOfGuesses").innerHTML = 0;
-    document.getElementById("guess").style.display = "inline";
-    document.getElementById("submitGuess").style.display = "inline";
-    document.getElementById("output").style.display = "inline-block";
-    var guesses = document.getElementById("output");
-    guesses.value = "";
-    numToGuess = Math.floor(Math.random()*100) + 1;
-    document.getElementById("output").rows = 3;
-    guesses.value = "Your guesses:\n";
-    if(l.matches){
-    document.getElementById("gameRight").style.width = "47%";
-    }   else if(xl.matches){
-        document.getElementById("gameRight").style.width = "47%";
-        }   else{
-            document.getElementById("gameRight").style.width = "100%";
-            }
 }
 
 function hamburger() {
