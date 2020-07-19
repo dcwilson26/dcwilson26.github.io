@@ -1,3 +1,7 @@
+$(document).ready(function(){
+    $("header").fadeIn(1000)
+})
+
 var n = 0
 var g = 0
 var l = 0
@@ -57,11 +61,12 @@ function mainMenu(){
     l = 0;
     min = 1;
     max = 2;
+    document.getElementById("guess").value=null;
     document.getElementById("guesses").innerHTML=null;
     document.getElementById("result").innerHTML=null;
 }
 
-function newGame(){
+function newGame(){    
     var listItems = document.getElementById("list");
     var li = document.getElementsByTagName("li").length;    
     if(listItems.hasChildNodes()){  
@@ -76,6 +81,7 @@ function newGame(){
     max = d;
     $("#winReset").fadeOut(500);
     $("#winImage").fadeOut(500);
+    document.getElementById("guess").value=null;
     document.getElementById("level").innerHTML=level;
     document.getElementById("left").style.display="inline-block";        
     document.getElementById("guesses").innerHTML=null;
