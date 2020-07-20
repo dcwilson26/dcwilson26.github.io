@@ -5,22 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Poker | Red Rock Resort</title>
     <link rel="stylesheet" href="poker.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-        $.ajax({
-            url: 'https://spreadsheets.google.com/feeds/list/1zWt_uX96YCfZjpGQ2puc8YOS0qnxOt3juKx1ysHH_RQ/od6/public/values?alt=json',
-            dataType: 'json',
-            success: function(data) {
-            console.dir(data);
-            var suitAmount = new Array("Aces", "Kings", "Queens", "Jacks", "Tens", "Nines", "Eights", "Sevens", "Sixes", "Fives", "Fours", "Threes", "Deuces");
-            var currentHand = new Array("currentAces", "currentKings", "currentQueens", "currentJacks", "currentTens", "currentNines", "currentEights", "currentSevens", "currentSixes", "currentFives", "currentFours", "currentThrees", "currentDeuces");
-            for(i = 0; i < 13; i++){
-                document.getElementById(suitAmount[i]).innerHTML="$"+data.feed.entry[i].gsx$amount.$t;
-                document.getElementById(currentHand[i]).innerHTML=data.feed.entry[i].gsx$current.$t
-                }
-            }
-        });
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
 </head>
 <body>
     <header>
@@ -50,7 +35,8 @@
                     <ul><li>Dedicated Cashier</li></ul>
                     <ul><li>Free Parking</li></ul>
                     <ul><li>Promotions</li></ul>               
-                    <ul><li>BravoPoker App</li></ul>                                        
+                    <ul><li>BravoPoker App</li></ul> 
+                    <ul><li>Call ahead seating</li></ul>                                       
                 </div>             
             </div>    
         </section>
@@ -68,9 +54,11 @@
             </div>
             <div class="right">                                
                 <img id="royalImg" src="RoyalFlush.png">
-                <div id="highHands">
-                    <div id="royal">Hit any royal flush and win $250!</div>
-                    <div id="stflush">Hit any straight flush and win $100!</div>                
+                <div id="highHands">                    
+                    <div class="promos">Hit any <b>Royal Flush</b> and win <b>$250!</b></div>
+                    <div class="promos">Hit any <b>Straight Flush</b> and win <b>$100!</b></div> 
+                    <div class="promos"><b>Quad Floppers</b><br>Every Tuesday, Thursday, and Saturday flop any four of a kind and win <b>$500!</b></div>
+                    <div class="promos">Flop the current progressive quad below and you could win even more!</div>              
                 </div>             
                 <table id="rockIt">
                     <tr><th colspan="6">Rock It To The Deuces</th></tr>
@@ -84,6 +72,29 @@
                 </table>                
             </div>
         </section>
+        <section id="contact">
+            <div class="left">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="right">
+                <p id="phone">For more information or to place yourself on the list for one of our games, call <a href="tel:702-797-7766">(702)797-7766</a></p>
+            </div>
+        </section>
     </main>
+<script>
+    $.ajax({
+        url: 'https://spreadsheets.google.com/feeds/list/1zWt_uX96YCfZjpGQ2puc8YOS0qnxOt3juKx1ysHH_RQ/od6/public/values?alt=json',
+        dataType: 'json',
+        success: function(data) {
+        console.dir(data);
+        var suitAmount = ["Aces", "Kings", "Queens", "Jacks", "Tens", "Nines", "Eights", "Sevens", "Sixes", "Fives", "Fours", "Threes", "Deuces"];
+        var currentHand = ["currentAces", "currentKings", "currentQueens", "currentJacks", "currentTens", "currentNines", "currentEights", "currentSevens", "currentSixes", "currentFives", "currentFours", "currentThrees", "currentDeuces"];
+        for(i = 0; i < 13; i++){
+            document.getElementById(suitAmount[i]).innerHTML="$"+data.feed.entry[i].gsx$amount.$t;
+            document.getElementById(currentHand[i]).innerHTML=data.feed.entry[i].gsx$current.$t
+            }
+        }
+    });
+</script>
 </body>
 </html>

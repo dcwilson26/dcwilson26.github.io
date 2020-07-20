@@ -7,13 +7,14 @@ h2{margin-top: 15%;}
 .iconContainer{display: inline-block; width: 35%; margin: 0 0 3% 0;}
 #bullets{ width: 60%; text-align: left; margin: 0 auto;}
 #royalImg{width: 35%;}
-#royal, #stflush {font-size: 1.1rem; margin: 5% 0;}
+.promos{font-size: 1.1rem; margin: 5% 0;}
 table{border: solid 5px black; width: 100%; padding: 5% 1%; font-size: 1.1rem; line-height: 2rem;}
 th{text-align: center; font-size: 1.15rem; padding-bottom: 5%;}
 #currentText{text-align: center; font-size: 0.9rem;}
 .suit{width: 20%; text-align: left; padding: 0 2%;}
 .amount{width: 25%; text-align: right; padding: 0 2%;}
 .current{width: 10%; text-align: left; font-size: 2rem;}
+#phone{font-size: 1.1rem; margin-top: 5%;}
 
 @media only screen and (min-width: 768px){
 body{text-align: left;}       
@@ -29,7 +30,7 @@ li{width: 100%;}
 #royalImg{width: 25%;}
 #promotions img{display: inline-block; margin-bottom: 5%;}
 #highHands{display: inline-block; width: 65%; margin-left: 5%; vertical-align: top;}
-#royal, #stflush {font-size: 1.5rem; margin-bottom: 5%; text-align: left;}
+.promos{font-size: 1.5rem; margin-bottom: 5%; text-align: left;}
 table{font-size: 1.25rem; padding: 5% 2%; line-height: 2rem;}
 th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
 #currentText{font-size: 1.25rem;}
@@ -52,7 +53,7 @@ li{width: 100%;}
 #royalImg{width: 25%;}
 #promotions img{display: inline-block; margin-bottom: 5%;}
 #highHands{display: inline-block; width: 65%; margin-left: 5%; vertical-align: top;}
-#royal, #stflush {font-size: 1.1rem; margin-bottom: 5%; text-align: left;}
+.promos{font-size: 1.1rem; margin-bottom: 5%; text-align: left;}
 table{font-size: 1.25rem; padding: 5%; line-height: 2rem;}
 th{text-align: center; font-size: 1.35rem; padding-bottom: 5%;}
 #currentText{font-size: 1.25rem;}
