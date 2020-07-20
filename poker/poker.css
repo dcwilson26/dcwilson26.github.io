@@ -15,7 +15,7 @@ th{text-align: center; font-size: 1.15rem; padding-bottom: 5%;}
 .suit{width: 20%; text-align: left; padding: 0 2%;}
 .amount{width: 25%; text-align: right; padding: 0 2%;}
 .current{width: 10%; text-align: left; font-size: 2rem;}
-#phone{font-size: 1.1rem; margin-top: 5%;}
+#phone{margin-top: 5%;}
 
 @media only screen and (min-width: 768px){
 body{text-align: left;}       
