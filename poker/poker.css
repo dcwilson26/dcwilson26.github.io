@@ -6,6 +6,7 @@ h2{margin-top: 15%;}
 .icon{width: 30px; margin: 0 3% 0 5%;}
 .iconContainer{display: inline-block; width: 35%; margin: 0 0 3% 0;}
 #bullets{ width: 60%; text-align: left; margin: 0 auto;}
+#gameInfo{text-align: left;}
 #royalImg{width: 35%;}
 .promos{font-size: 1.1rem; margin: 5% 0;}
 table{border: solid 5px black; width: 100%; padding: 5% 1%; font-size: 1.1rem; line-height: 2rem;}
@@ -27,6 +28,7 @@ body{text-align: left;}
 h1, h2{font-size: 1.5rem; font-weight: none;}        
 ul{width: 26%; display: inline-block; vertical-align: top;}
 li{width: 100%;}
+#gameInfo{text-align: left; margin-top: 3%;}
 #royalImg{width: 25%;}
 #promotions img{display: inline-block; margin-bottom: 5%;}
 #highHands{display: inline-block; width: 65%; margin-left: 5%; vertical-align: top;}
@@ -50,6 +52,7 @@ body{margin: 0 5% 10% 5%; text-align: left;}
 h1, h2{font-size: 1.5rem; font-weight: none;}        
 ul{width: 26%; display: inline-block; vertical-align: top;}
 li{width: 100%;}
+#gameInfo{text-align: left; margin-top: 3%;}
 #royalImg{width: 25%;}
 #promotions img{display: inline-block; margin-bottom: 5%;}
 #highHands{display: inline-block; width: 65%; margin-left: 5%; vertical-align: top;}
