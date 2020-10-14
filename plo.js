@@ -15,7 +15,7 @@ input.addEventListener("keyup", function(event) {
 function submitBet(){    
     var list = document.createElement("li");
     bet = document.getElementById("bet").value;
-    if(bet>maxPot || bet<5){
+    if(bet>maxPot || bet<5 || bet!=Math.floor(bet)){
         alert("Invalid bet amount");
         document.getElementById("bet").value = null;
     }   else{
