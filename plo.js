@@ -15,15 +15,15 @@ input.addEventListener("keyup", function(event) {
 function submitBet(){    
     var list = document.createElement("li");
     bet = document.getElementById("bet").value;
-    if(bet>maxPot || bet<=0){
-        alert("Bet not entered or exceeds pot size");
+    if(bet>maxPot || bet<5){
+        alert("Invalid bet amount");
         document.getElementById("bet").value = null;
     }   else{
     newPot = +pot + +previous;
     maxPot = (+bet * 3) + +newPot;    
     document.getElementById("pot").innerHTML = maxPot;
     list.innerHTML = bet;
-    document.getElementById("list").appendChild(list);
+    document.getElementById("list").appendChild(list);    
     document.getElementById("bet").value = null;  
     pot = newPot;
     previous = bet;    

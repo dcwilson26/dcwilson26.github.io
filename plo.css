@@ -3,3 +3,4 @@ body{text-align: center;}
 #bet{margin: 10px auto; height: 50px; width: 200px; text-align: center; font-size: 1.5rem;}
 #betList{margin: 10px auto;}
 ol{margin: auto; padding-left: 20px; width: 100px;}
+.button{width: 97px; margin: auto 5px; height: 25px;}
