@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plo.css">
+    <title>1/2 PLO Pot Bet Calculator</title>
+</head>
+<body>
+    <h1>1/2 PLO Pot Bet Calculator</h1>
+    <main>        
+        <div id="calculator">
+            <div id="potBet">Pot bet: <span id="pot">15</span></div>            
+            <input name="bet" id="bet" type="number"><br>
+            <input class="button" name="submit" id="submit" type="submit" value="Submit Bet" onclick="submitBet()" style="cursor: pointer;">
+            <input class="button" name="reset" id="reset" type="reset" value="Reset" onclick="reset()" style="cursor: pointer;">        
+            <div id="betList">Bets:</div>
+            <ol id="list"></ol>
+        </div>    
+        <div id="test"></div>    
+    </main>
+<script src="plo.js"></script>
+</body>
+</html>
