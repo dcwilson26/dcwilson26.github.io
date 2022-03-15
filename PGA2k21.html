@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGA2k21 Wind/Elevation Calculator</title>
+    <style>
+        main {margin: 2% auto 2% auto;}
+        h1 {text-align: center; font-size: xx-large;}
+        p, input, option, select {text-align: center; font-size: large;}
+        output {font-size: xx-large; font-weight: bold; color: crimson;}
+        img {display: block; max-width: 25%; min-width: 200px; margin-left: auto; margin-right: auto;}      
+    </style>     
+</head>
+<body>
+<main>
+    <img src="pga2k21.jpeg" alt="logo">
+    <h1>Wind/Elevation Calculator</h1>    
+    <form id="info">
+    <p><b>Landing Distance (yards):</b><br>ie: Where do you want the ball to land?<br>
+        <input type="number" id="distance" name="speed" value="0">                
+    </p>    
+    <p><b>Club Type:</b><br>
+            <select id="club">
+                <option value="0">Driver</option>
+                <option value="1">Wood</option>
+                <option value="2">Hybrid</option>
+                <option value="3">Iron</option>
+                <option value="4">Pitching Wedge</option>
+                <option value="5">Gap Wedge</option>
+                <option value="6">Sand Wedge</option>
+                <option value="7">Lob Wedge</option>
+            </select>        
+    </p>
+    <p><b>Wind Direction:</b><br>
+            <select id="wind">
+                <option value="8">Headwind(100%)</option>
+                <option value="7">Head(75%)/Cross(25%)</option>
+                <option value="6">Head(50%)/Cross(50%)</option>
+                <option value="5">Head(25%)/Cross(75%)</option>
+                <option value="4">Crosswind(100%)</option>
+                <option value="3">Tail(25%)/Cross(75%)</option>
+                <option value="2">Tail(50%)/Cross(50%)</option>
+                <option value="1">Tail(75%)/Cross(25%)</option>
+                <option value="0">Tailwind(100%)</option>
+            </select>        
+    </p>
+    <p><b>Wind Speed (mph):</b><br>
+        <input type="number" id="speed" name="speed" value="0">                
+    </p>    
+    <p><b>Elevation:</b><br>(ex: For 5ft up enter 5, for 12ft down enter -12)<br>
+        <input type="number" id="elevation" name="elevation" value="0">                
+    </p>
+    <p>    
+    <input class="formButton" type="button" onclick="calculate()" value="Calculate">
+    <input class="formButton" type="button" onclick="clearResult()" value="Clear">
+    </p>
+    </form>      
+    <p><b>You should aim approximately:</b></p>
+    <p><output id="result"></output></p>
+    </p>
+</main>   
+    <script>        
+        const driver = ["1.24", "1.1", "0.88", "0.5", "0", "-1", "-1.61", "-2", "-2.26"];
+        const wood = ["0.95", "0.84", "0.69", "0.45", "0", "-0.75", "-1.25", "-1.6", "-1.92"];
+        const hybrid = ["0.66", "0.61", "0.54", "0.4", "0", "-0.6", "-1", "-1.35", "-1.6"];
+        const iron = ["0.76", "0.67", "0.55", "0.35", "0", "-0.65", "-1.13", "-1.4", "-1.6"];
+        const pw = ["0.76", "0.65", "0.5", "0.3", "0", "-0.62", "-1.04", "-1.3", "-1.5"];
+        const gw = ["0.67", "0.6", "0.47", "0.25", "0", "-0.59", "-0.93", "-1.25", "-1.41"];
+        const sw = ["0.49", "0.42", "0.33", "0.2", "0", "-0.58", "-0.92", "-1.2", "-1.34"];
+        const lw = ["0.42", "0.35", "0.26", "0.15", "0", "-0.5", "-0.76", "-0.9", "-1.06"];
+        function calculate(){
+            let d = document.getElementById("distance").value;
+            let c = document.getElementById("club").value;
+            let w = document.getElementById("wind").value;
+            let s = document.getElementById("speed").value;
+            let e = document.getElementById("elevation").value;        
+            if(c==0){
+                let x = driver[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }                             
+            }else if(c==1){
+                let x = wood[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==2){
+                let x = hybrid[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==3){
+                let x = iron[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==4){
+                let x = pw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==5){
+                let x = gw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==6){
+                let x = sw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else{
+                let x = lw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }
+            
+        }
+        function clearResult(){
+            document.getElementById("info").reset();
+            document.getElementById("result").innerHTML="";
+        }      
+    </script>  
+</body>
+</html>
