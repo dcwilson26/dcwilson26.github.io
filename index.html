@@ -10,7 +10,7 @@
         div {text-align: center; font-size: medium; margin: auto 33% auto 33%;}
         p, input, option, select {text-align: center; font-size: large;}
         output {font-size: xx-large; font-weight: bold; color: crimson;}
-        img {display: block; max-width: 25%; min-width: 200px; margin-left: auto; margin-right: auto;}
+        img {display: block; max-width: 20%; min-width: 200px; margin-left: auto; margin-right: auto;}
         @media only screen and (max-width: 600px){
         main {margin: 2% auto 2% auto;}
         h1 {text-align: center; font-size: medium;}
@@ -24,11 +24,13 @@
 <body>
 <main>
     <img src="pga2k21.jpeg" alt="logo">
-    <h1>Wind/Elevation Calculator</h1>
-    <div>All values calculated for normal shots with no trajectory or spin adjustments based on average results. Special thanks to Gamer Ability for most of the data used on this site.</div>    
+    <h1>Wind/Elevation Calculator</h1>        
     <form id="info">
     <p><b>Landing Distance (yards):</b><br>ie: Where do you want the ball to land?<br>
         <input type="number" id="distance" name="speed" value="0">                
+    </p>
+    <p><b>Lie Penalty Percentage:</b><br>ex: If the lie penalty range is 68% - 76%, type 76<br>
+        <input type="number" id="lie" name="lie" value="100">               
     </p>    
     <p><b>Club Type:</b><br>
             <select id="club">
@@ -73,7 +75,8 @@
     </p>
     </form>      
     <p><b>You should aim approximately:</b></p>
-    <p><output id="result"></output></p>    
+    <p><output id="result"></output> yards</p>
+    <div>All values calculated for normal shots with no trajectory or spin adjustments based on average results. Special thanks to Gamer Ability for most of the data used on this site.</div>    
 </main>   
     <script>            
         const driver = ["1.24", "1.1", "0.88", "0.5", "0", "-1", "-1.61", "-2", "-2.26"];
@@ -86,6 +89,7 @@
         const lw = ["0.42", "0.35", "0.26", "0.15", "0", "-0.5", "-0.76", "-0.9", "-1.06"];
         function calculate(){
             let d = document.getElementById("distance").value;
+            let p = document.getElementById("lie").value;
             let c = document.getElementById("club").value;
             let w = document.getElementById("wind").value;
             let s = document.getElementById("speed").value;
@@ -93,98 +97,106 @@
             let e = document.getElementById("elevation").value;
             if(Number.isInteger(+d) && +d>0){
                 if(Number.isInteger(+s) && +s>=0){
-                    if(Number.isInteger(+e) && +e>=0){                        
-                    }else{
-                        alert("Elevation must be a positive number or 0");
-                        return;
-                        }                  
-                            }else{
-                                alert("Wind Speed must be a positive number or 0");
-                                return;
-                            }                            
-                                }else{                    
-                                    alert("Landing Distance must be positive number above 0");
+                    if(Number.isInteger(+e) && +e>=0){
+                        if(Number.isInteger(+p) && +p>=50 && +p<=100){                         
+                        }else{
+                            alert("Lie Penalty Percentage must be between 50 and 100");
+                            return;
+                            }                       
+                                }else{
+                                    alert("Elevation must be a positive number or 0");
                                     return;
+                                    }                  
+                                        }else{
+                                            alert("Wind Speed must be a positive number or 0");
+                                            return;
+                                        }                            
+                                            }else{                    
+                                                alert("Landing Distance must be positive number above 0");
+                                                return;
                 }
             if(c==0){
                 let x = driver[w];
                 let r = +d - (x*s);
+                let pp = +p*0.01;
+                let zz = +r*pp;
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=zz.toFixed(2);
                 }else{
                     let y = (+e/3) * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    let rr = +z*pp;
+                    document.getElementById("result").innerHTML=rr.toFixed(2);
                 }                             
             }else if(c==1){
                 let x = wood[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==2){
                 let x = hybrid[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==3){
                 let x = iron[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==4){
                 let x = pw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==5){
                 let x = gw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==6){
                 let x = sw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else{
                 let x = lw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
                     let z = +r + +y;
-                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                    document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }
             
