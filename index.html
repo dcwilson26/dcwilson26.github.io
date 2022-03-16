@@ -47,8 +47,14 @@
     </p>
     <p><b>Wind Speed (mph):</b><br>
         <input type="number" id="speed" name="speed" value="0">                
+    </p>
+    <p><b>Target Location:</b><br>
+        <select id="loc">
+            <option value="1">Above</option>
+            <option value="-1">Below</option>
+        </select>
     </p>    
-    <p><b>Elevation:</b><br>(ex: For 5ft up enter 5, for 12ft down enter -12)<br>
+    <p><b>Elevation (ft.):</b><br>
         <input type="number" id="elevation" name="elevation" value="0">                
     </p>
     <p>    
@@ -60,7 +66,7 @@
     <p><output id="result"></output></p>
     </p>
 </main>   
-    <script>        
+    <script>            
         const driver = ["1.24", "1.1", "0.88", "0.5", "0", "-1", "-1.61", "-2", "-2.26"];
         const wood = ["0.95", "0.84", "0.69", "0.45", "0", "-0.75", "-1.25", "-1.6", "-1.92"];
         const hybrid = ["0.66", "0.61", "0.54", "0.4", "0", "-0.6", "-1", "-1.35", "-1.6"];
@@ -74,6 +80,7 @@
             let c = document.getElementById("club").value;
             let w = document.getElementById("wind").value;
             let s = document.getElementById("speed").value;
+            let l = document.getElementById("loc").value;
             let e = document.getElementById("elevation").value;        
             if(c==0){
                 let x = driver[w];
@@ -81,7 +88,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = (+e/3) * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }                             
@@ -91,7 +98,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = +e/3 * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }            
@@ -101,7 +108,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = +e/3 * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }            
@@ -111,7 +118,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = +e/3 * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }            
@@ -121,7 +128,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = +e/3 * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }            
@@ -131,7 +138,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = +e/3 * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }            
@@ -141,7 +148,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = +e/3 * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }            
@@ -151,7 +158,7 @@
                 if(e==0){
                     document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
                 }else{
-                    let y = +e/3;
+                    let y = +e/3 * +l;
                     let z = +r + +y;
                     document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
                 }            
