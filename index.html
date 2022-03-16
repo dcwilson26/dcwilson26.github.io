@@ -117,98 +117,98 @@
                             }            
             if(c==0){
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = driver[w];
-                let r = +d - (x*s);            
-                if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                let r = pd - (x*s);            
+                if(e==0){                    
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{                    
                     let y = (+e/3) * +l;
-                    let z = (+r + +y) / pp;               
+                    let z = (+r + +y);               
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }                             
             }else if(c==1){
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = wood[w];
-                let r = +d - (x*s);
+                let r = pd - (x*s);
                 if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = (+r + +y) / pp;
+                    let z = (+r + +y);
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==2){
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = hybrid[w];
-                let r = +d - (x*s);
+                let r = pd - (x*s);
                 if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = (+r + +y) / pp;
+                    let z = (+r + +y);
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==3){
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = iron[w];
-                let r = +d - (x*s);
+                let r = pd - (x*s);
                 if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = (+r + +y) / pp;
+                    let z = (+r + +y);
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==4){
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = pw[w];
-                let r = +d - (x*s);
+                let r = pd - (x*s);
                 if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = (+r + +y) / pp;
+                    let z = (+r + +y);
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==5){
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = gw[w];
-                let r = +d - (x*s);
+                let r = pd - (x*s);
                 if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = (+r + +y) / pp;
+                    let z = (+r + +y);
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==6){
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = sw[w];
-                let r = +d - (x*s);
+                let r = pd - (x*s);
                 if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = (+r + +y) / pp;
+                    let z = (+r + +y);
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else{
                 let pp = +p*0.01;
+                let pd = +d / pp;
                 let x = lw[w];
-                let r = +d - (x*s);
-                if(e==0){
-                    let f = r / pp;
-                    document.getElementById("result").innerHTML=f.toFixed(2);
+                let r = pd - (x*s);
+                if(e==0){                    
+                    document.getElementById("result").innerHTML=r.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = (+r + +y) / pp;
+                    let z = (+r + +y);
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }
