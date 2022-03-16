@@ -70,8 +70,7 @@
     </p>
     </form>      
     <p><b>You should aim approximately:</b></p>
-    <p><output id="result"></output></p>
-    </p>
+    <p><output id="result"></output></p>    
 </main>   
     <script>            
         const driver = ["1.24", "1.1", "0.88", "0.5", "0", "-1", "-1.61", "-2", "-2.26"];
@@ -88,7 +87,17 @@
             let w = document.getElementById("wind").value;
             let s = document.getElementById("speed").value;
             let l = document.getElementById("loc").value;
-            let e = document.getElementById("elevation").value;        
+            let e = document.getElementById("elevation").value;
+            if(Number.isInteger(+d) && +d>0){
+                if(Number.isInteger(+s) && +s>=0){                    
+                    }else{
+                        alert("Wind Speed must be a positive number or 0");
+                        return;
+                }                            
+                }else{                    
+                    alert("Landing Distance must be positive number above 0");
+                    return;
+                }
             if(c==0){
                 let x = driver[w];
                 let r = +d - (x*s);
