@@ -89,14 +89,19 @@
             let l = document.getElementById("loc").value;
             let e = document.getElementById("elevation").value;
             if(Number.isInteger(+d) && +d>0){
-                if(Number.isInteger(+s) && +s>=0){                    
+                if(Number.isInteger(+s) && +s>=0){
+                    if(Number.isInteger(+e) && +e>=0){                        
                     }else{
-                        alert("Wind Speed must be a positive number or 0");
+                        alert("Elevation must be a positive number or 0");
                         return;
-                }                            
-                }else{                    
-                    alert("Landing Distance must be positive number above 0");
-                    return;
+                        }                  
+                            }else{
+                                alert("Wind Speed must be a positive number or 0");
+                                return;
+                            }                            
+                                }else{                    
+                                    alert("Landing Distance must be positive number above 0");
+                                    return;
                 }
             if(c==0){
                 let x = driver[w];
