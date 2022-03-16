@@ -27,14 +27,17 @@
     <h1>Wind/Elevation Calculator</h1>        
     <form id="info">
     <p><b>Landing Distance (yards):</b><br>ie: Where do you want the ball to land?<br>
-        <input type="number" id="distance" name="speed" value="0">                
+        <input type="number" id="distance" name="speed" value="">                
+    </p>
+    <p><b>Lie Penalty Percentage:</b><br>ex: If the lie penalty range is 68%-75%, type 75<br>
+        <input type="number" id="penalty" name="penalty" value="99">             
     </p>    
     <p><b>Club Type:</b><br>
             <select id="club">
                 <option value="0">Driver</option>
                 <option value="1">Wood</option>
                 <option value="2">Hybrid</option>
-                <option value="3">Iron</option>
+                <option value="3" selected>Iron</option>
                 <option value="4">Pitching Wedge</option>
                 <option value="5">Gap Wedge</option>
                 <option value="6">Sand Wedge</option>
@@ -85,7 +88,8 @@
         const sw = ["0.49", "0.42", "0.33", "0.2", "0", "-0.58", "-0.92", "-1.25", "-1.34"];
         const lw = ["0.42", "0.35", "0.26", "0.15", "0", "-0.5", "-0.76", "-0.95", "-1.06"];
         function calculate(){
-            let d = document.getElementById("distance").value;            
+            let d = document.getElementById("distance").value;
+            let p = document.getElementById("penalty").value;          
             let c = document.getElementById("club").value;
             let w = document.getElementById("wind").value;
             let s = document.getElementById("speed").value;
@@ -93,97 +97,118 @@
             let e = document.getElementById("elevation").value;
             if(Number.isInteger(+d) && +d>0){
                 if(Number.isInteger(+s) && +s>=0){
-                    if(Number.isInteger(+e) && +e>=0){                                               
+                    if(Number.isInteger(+e) && +e>=0){
+                        if(Number.isInteger(+p) && +p>=50 && +p<=100){                            
+                        }else{
+                            alert("Lie Penalty Percentage must be between 50 and 100");
+                            return;                                             
+                            }
                         }else{
                             alert("Elevation must be a positive number or 0");
                             return;
-                            }                  
-                                }else{
-                                    alert("Wind Speed must be a positive number or 0");
-                                    return;
-                                    }                            
-                                        }else{                    
-                                            alert("Landing Distance must be positive number above 0");
-                                            return;
-                }
+                            }
+                        }else{
+                            alert("Wind Speed must be a positive number or 0");
+                            return;
+                            }
+                        }else{                    
+                            alert("Landing Distance must be positive number above 0");
+                            return;
+                            }            
             if(c==0){
+                let pp = +p*0.01;
                 let x = driver[w];
-                let r = +d - (x*s);                
+                let r = +d - (x*s);            
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
-                }else{
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
+                }else{                    
                     let y = (+e/3) * +l;
-                    let z = +r + +y;                    
+                    let z = (+r + +y) / pp;               
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }                             
             }else if(c==1){
+                let pp = +p*0.01;
                 let x = wood[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = +r + +y;
+                    let z = (+r + +y) / pp;
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==2){
+                let pp = +p*0.01;
                 let x = hybrid[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = +r + +y;
+                    let z = (+r + +y) / pp;
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==3){
+                let pp = +p*0.01;
                 let x = iron[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = +r + +y;
+                    let z = (+r + +y) / pp;
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==4){
+                let pp = +p*0.01;
                 let x = pw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = +r + +y;
+                    let z = (+r + +y) / pp;
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==5){
+                let pp = +p*0.01;
                 let x = gw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = +r + +y;
+                    let z = (+r + +y) / pp;
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else if(c==6){
+                let pp = +p*0.01;
                 let x = sw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = +r + +y;
+                    let z = (+r + +y) / pp;
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }else{
+                let pp = +p*0.01;
                 let x = lw[w];
                 let r = +d - (x*s);
                 if(e==0){
-                    document.getElementById("result").innerHTML=r.toFixed(2);
+                    let f = r / pp;
+                    document.getElementById("result").innerHTML=f.toFixed(2);
                 }else{
                     let y = +e/3 * +l;
-                    let z = +r + +y;
+                    let z = (+r + +y) / pp;
                     document.getElementById("result").innerHTML=z.toFixed(2);
                 }            
             }
