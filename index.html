@@ -1,193 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daniel Wilson Resume</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Galada&display=swap">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="css/wilson.css">    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGA2k21 Wind/Elevation Calculator</title>
+    <style>
+        main {margin: 2% auto 2% auto;}
+        h1 {text-align: center; font-size: xx-large;}
+        p, input, option, select {text-align: center; font-size: large;}
+        output {font-size: xx-large; font-weight: bold; color: crimson;}
+        img {display: block; max-width: 25%; min-width: 200px; margin-left: auto; margin-right: auto;}      
+    </style>     
 </head>
 <body>
-    <header class="topnav">
-            <h1>Daniel Wilson</h1>
-            <img src="images/DanielWilson.gif" alt="Daniel Wilson Logo" id="titleLogo">
-                <nav id="myLinks">
-                    <a href="#about" onclick="hamburger(this)"><img class="navIcon" alt="About Icon" src="images/about.png">About Me</a>
-                    <a href="#experience" onclick="hamburger(this)"><img class="navIcon" alt="Experience Icon" src="images/experience.png">Experience</a>
-                    <a href="#education" onclick="hamburger(this)"><img class="navIcon" alt="Education Icon" src="images/education.png">Education</a>
-                    <a href="#skills" onclick="hamburger(this)"><img class="navIcon" alt="Skills Icon" src="images/skills.png">Skills</a>
-                    <a href="#forfun" onclick="hamburger(this)"><img class="navIcon" alt="For Fun Icon" src="images/forfun.png">For Fun!</a>
-                    <a href="#contact" onclick="hamburger(this)"><img class="navIcon" alt="Contact Icon" src="images/contact.png">Contact</a>
-                </nav>
-            <a href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
-    </header>
-    <main>
-        <section id="about">
-            <div class="slideshow-container">
-                <div class="mySlides fade" id="activeSlide">
-                    <div class="numbertext">1 / 6</div>
-                    <img src="images/Danny.jpg" alt="Las Vegas 2020">
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 6</div>                    
-                    <img src="images/DannyNY1.JPG" alt="New York City 2019">                    
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 6</div>
-                    <img src="images/DannyNY2.JPG" alt="Empire State Building 2019">                    
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 6</div>                    
-                    <img src="images/DannyNY3.JPG" alt="Battery Park 2019">                    
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="images/DannyDisney.JPG" alt="Disneyland 2017">                    
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="images/DannyBeach.JPG" alt="Santa Monica 2014">                    
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>  
-            <div id="dotContainer">
-                <span class="dot active" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(6)"></span>
-            </div>
-            <h2>Hello, I'm Daniel!</h2>                
-                <p>In 2020, due to closures and restrictions caused by the Covid-19 global pandemic, 
-                    I was sadly let go from my job as a poker dealer in Las Vegas, Nevada. However, 
-                    instead of waiting and hoping that my previous job would eventually come calling, 
-                    I decided to use my free time to learn new skills online. I had always enjoyed 
-                    working with computers so I began learning about business staples like Excel and PowerPoint. 
-                    Eventually, my odyssey took me into the realm of web design and coding which culminated in 
-                    a capstone project to design my own webpage; the very page you are visiting right now. I designed
-                    this page to act as a standard resume as well as a platform to share my skill with HTML5, CSS3, and Javascript. Enjoy!
-                </p>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2><hr>
-            <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">
-            <img src="images/RedRock.jpg" class="headImage" id="redRock" alt="Red Rock Casino entrance" onmouseover="redRockLogo()" onmouseout="redRockCasino()">
-            <h3>Red Rock Casino Resort & Spa</h3>
-            <div class="year">2006-2020</div>
-                <ul>            
-                    <li>Supervisor</li>
-                    <li>Tournament Director</li>
-                    <li>Poker Dealer</li>
-                    <li>Cashier</li>
-                </ul>
-                <p>Though I initially applied to be a poker dealer, in May 2006 I was hired as a part-time cashier in the poker room. After about a month, I became 
-                        the full-time swing shift cashier and I held that position until March of 2007 when I was promoted 
-                        to poker dealer. I spent the next 13 years perfecting my craft and getting to know many of our regular 
-                        customers. Starting in 2020, I began officially training to become a supervisor and tournament director. My training 
-                        was completed in March, one week before the Red Rock closed.
-                </p>
-            <h3>Vons Supermarket</h3>
-            <div class="year">2002-2003</div>
-                <ul>
-                    <li>Meat Department Assistant</li>
-                    <li>Courtesy Clerk</li>
-                </ul>
-                <p>After my 2nd year at UCLA, I decided to take a year off from my studies and move back home. I was hired as a courtesy clerk at the local Vons Supermarket. 
-                    I was eventually promoted to Meat Department Assistant where I worked for a few months before returning to UCLA.
-                </p>
-            <h3>GNA Brook Fire Protection</h3>
-            <div class="year">1999-2001</div>
-                <ul>
-                    <li>Office Assistant</li>
-                </ul>
-                <p>During the summers of 1999 through 2001, I worked as an office assistant at GNA Brook Fire Protection. 
-                    My job consisted mostly of answering phones, dispatching workers, and inputing data into the company computer.
-                </p>
-        </section>
-        <section id="education">
-            <h2>Education</h2><hr>
-                <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">
-                <img src="images/UCLA.jpg" class="headImage" id="ucla" alt="Royce Hall at UCLA" onmouseover="uclaBruins()" onmouseout="royceHall()">
-                <h3>University of California Los Angeles</h3>
-                <div class="year">2000-2002<br>2003-2006</div>
-                    <p>I came from a long line of UCLA Bruins so when it came time to apply to colleges, I only applied to one. To my great delight, 
-                        I was accepted into my dream school to play baseball. Unfortunately, I injured my shoulder during my senior year of high school 
-                        and despite a full summer of very strenuous rehab, I reinjured it during my first year at UCLA. Without baseball, I began to feel lost and 
-                        decided to take a one year break after my second year. In 2003, I returned to UCLA and joined the Zeta Psi Fraternity of North America. I focused my studies on 
-                        history and spent much of my time playing poker and participating in fraternity activities. I graduated from UCLA in 2006 and immediately moved to Las Vegas with 
-                        the hope of becoming a poker dealer.
-                    </p>
-                <h3>Glendora High School</h3>
-                <div class="year">1996-2000</div>
-                    <p>I left middle school as a scrawny, bullied kid, but arrived at high school nearly a foot taller and ready for a new beginning. I played both football and 
-                        baseball my freshman year but after that, I decided to stick with only baseball. By my senior year, I was getting straight As and I was not only playing on the school varsity team but 
-                        also on the Pasadena Red Birds, a travelling scout team affiliated with the St. Louis Cardinals.
-                    </p>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2><hr>
-                <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">
-                <p>This is a list of specializations and courses I have taken online. 
-                    Click on the links below to view the certificate.</p>
-                <ul>
-                    <li><a class="example-image-link" href="images/ExcelCertificate.jpg" data-lightbox="example-1" data-title="Excel Skills for Business Specialization by Macquarie University">Excel Skills for Business Specialization by Macquarie University</a></li>
-                    <li><a class="example-image-link" href="images/PowerPointCertificate.jpg" data-lightbox="example-2" data-title="Master PowerPoint Presentation by Udemy">Master PowerPoint Presentation by Udemy</a></li>
-                    <li><a class="example-image-link" href="images/SocialMediaCertificate.png" data-lightbox="example-3" data-title="Social Media Marketing Certification from Hubspot Academy">Social Media Marketing Certification from Hubspot Academy</a></li>
-                    <li><a class="example-image-link" href="images/HTML5Certificate.jpg" data-lightbox="example-4" data-title="Introduction to HTML5 by the University of Michigan">Introduction to HTML5 by the University of Michigan</a></li>
-                    <li><a class="example-image-link" href="images/CSS3Certificate.jpg" data-lightbox="example-5" data-title="Introduction to CSS3 by the University of Michigan">Introduction to CSS3 by the University of Michigan</a></li>
-                    <li><a class="example-image-link" href="images/JavascriptCertificate.jpg" data-lightbox="example-6" data-title="Interactivity with Javascript by the University of Michigan">Interactivity with Javascript by the University of Michigan</a></li>
-                    <li><a class="example-image-link" href="images/ResponsiveDesignCertificate.jpg" data-lightbox="example-7" data-title="Advanced Styling with Responsive Design by the University of Michigan">Advanced Styling with Responsive Design by the University of Michigan</a></li>
-                </ul>
-        </section>
-        <section id="forfun">
-            <h2>For Fun!</h2><hr>
-                <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">          
-                <img src="images/LasVegasSign.jpg" class="headImage" id="vegas" alt="The famous Las Vegas Sign" onmouseover="lasVegasStrip()" onmouseout="lasVegasSign()">  
-                <h3>High/Low Game</h3>
-                    <p>To showcase what I have learned in my web design courses, I thought it would be fun to create a few games. The object of the first game is 
-                        to try to guess the correct random number. After each guess you will be told if the correct number is higher or lower. There are many different difficulty levels so pick one and "Good luck!"       
-                    </p>
-                    <a href="highlow/highlow.html" target="_blank" class="goToGame">Go to Game</a>        
-                <h3>Rock Paper Scissors Lizard Spock</h3>
-                    <p>The second game I created is Rock Paper Scissors Lizard Spock from the popular television show, The Big Bang Theory. Simply click on your "weapon" and see if you can beat Sheldon Cooper at his own game.</p>
-                    <a href="RPSLS/RPSLS.html" target="_blank" class="goToGame">Go to Game</a>
-                <h3>Red Rock Poker Webpage</h3>         
-                    <p>To see what could be improved, I recreated the Red Rock poker room webpage with some added features. I plan on constantly updating the page so below is a link if you are interested.</p>                        
-                    <a href="poker/poker.html" target="_black" class="goToGame">Go to Site</a>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2><hr>
-                <img class="lineBreak" src="images/LineBreak.png" alt="Line Break">
-                <div id="socialLinks">
-                    <a href="https://www.facebook.com/profile.php?id=2520252" target="_blank" aria-label="My Facebook Page"><img src="images/facebook.png" alt="Facebook Icon"></a>
-                    <a href="https://twitter.com/dcwilson26" target="_blank" aria-label="My Twitter Page"><img src="images/twitter.png" alt="Twitter Icon"></a>
-                    <a href="https://www.linkedin.com/in/daniel-wilson-03508b1a9/" target="_blank" aria-label="My LinkedIn Page"><img src="images/linkedin.png" alt="LinkedIn Icon"></a>
-                </div>
-                <p>My current place of residence is in South Shores, Las Vegas, NV</p>
-                <div id="map"></div>
-                <form action="mailto:dcwilson26@hotmail.com?subject=Contact" id="form" method="post" enctype="text/plain">
-                    <label for="name">Name:</label><br>
-                    <input id="name" name="name" type="text"><br>
-                    <label for="email">Email:</label><br>
-                    <input id="email" name="email" type="email"><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="10" cols="40" placeholder="Type message here..."></textarea><br>
-                    <input type="submit" name="submit" value="Send Email">
-                    <input type="reset" value="Clear Form">
-                </form>
-        </section>
-    </main>
-    <footer>
-        Created from scratch by Daniel Wilson, July 2020
-    </footer>
-<script src="js/lightbox-plus-jquery.min.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRjZMT4tLFf3jZOjZTEDwtC0mRigJE73c&callback=initMap"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/wilson.js"></script>
+<main>
+    <img src="pga2k21.jpeg" alt="logo">
+    <h1>Wind/Elevation Calculator</h1>    
+    <form id="info">
+    <p><b>Landing Distance (yards):</b><br>ie: Where do you want the ball to land?<br>
+        <input type="number" id="distance" name="speed" value="0">                
+    </p>    
+    <p><b>Club Type:</b><br>
+            <select id="club">
+                <option value="0">Driver</option>
+                <option value="1">Wood</option>
+                <option value="2">Hybrid</option>
+                <option value="3">Iron</option>
+                <option value="4">Pitching Wedge</option>
+                <option value="5">Gap Wedge</option>
+                <option value="6">Sand Wedge</option>
+                <option value="7">Lob Wedge</option>
+            </select>        
+    </p>
+    <p><b>Wind Direction:</b><br>
+            <select id="wind">
+                <option value="8">Headwind(100%)</option>
+                <option value="7">Head(75%)/Cross(25%)</option>
+                <option value="6">Head(50%)/Cross(50%)</option>
+                <option value="5">Head(25%)/Cross(75%)</option>
+                <option value="4">Crosswind(100%)</option>
+                <option value="3">Tail(25%)/Cross(75%)</option>
+                <option value="2">Tail(50%)/Cross(50%)</option>
+                <option value="1">Tail(75%)/Cross(25%)</option>
+                <option value="0">Tailwind(100%)</option>
+            </select>        
+    </p>
+    <p><b>Wind Speed (mph):</b><br>
+        <input type="number" id="speed" name="speed" value="0">                
+    </p>    
+    <p><b>Elevation:</b><br>(ex: For 5ft up enter 5, for 12ft down enter -12)<br>
+        <input type="number" id="elevation" name="elevation" value="0">                
+    </p>
+    <p>    
+    <input class="formButton" type="button" onclick="calculate()" value="Calculate">
+    <input class="formButton" type="button" onclick="clearResult()" value="Clear">
+    </p>
+    </form>      
+    <p><b>You should aim approximately:</b></p>
+    <p><output id="result"></output></p>
+    </p>
+</main>   
+    <script>        
+        const driver = ["1.24", "1.1", "0.88", "0.5", "0", "-1", "-1.61", "-2", "-2.26"];
+        const wood = ["0.95", "0.84", "0.69", "0.45", "0", "-0.75", "-1.25", "-1.6", "-1.92"];
+        const hybrid = ["0.66", "0.61", "0.54", "0.4", "0", "-0.6", "-1", "-1.35", "-1.6"];
+        const iron = ["0.76", "0.67", "0.55", "0.35", "0", "-0.65", "-1.13", "-1.4", "-1.6"];
+        const pw = ["0.76", "0.65", "0.5", "0.3", "0", "-0.62", "-1.04", "-1.3", "-1.5"];
+        const gw = ["0.67", "0.6", "0.47", "0.25", "0", "-0.59", "-0.93", "-1.25", "-1.41"];
+        const sw = ["0.49", "0.42", "0.33", "0.2", "0", "-0.58", "-0.92", "-1.2", "-1.34"];
+        const lw = ["0.42", "0.35", "0.26", "0.15", "0", "-0.5", "-0.76", "-0.9", "-1.06"];
+        function calculate(){
+            let d = document.getElementById("distance").value;
+            let c = document.getElementById("club").value;
+            let w = document.getElementById("wind").value;
+            let s = document.getElementById("speed").value;
+            let e = document.getElementById("elevation").value;        
+            if(c==0){
+                let x = driver[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }                             
+            }else if(c==1){
+                let x = wood[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==2){
+                let x = hybrid[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==3){
+                let x = iron[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==4){
+                let x = pw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==5){
+                let x = gw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else if(c==6){
+                let x = sw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }else{
+                let x = lw[w];
+                let r = +d - (x*s);
+                if(e==0){
+                    document.getElementById("result").innerHTML=r.toFixed(2)+" yards";
+                }else{
+                    let y = +e/3;
+                    let z = +r + +y;
+                    document.getElementById("result").innerHTML=z.toFixed(2)+" yards";
+                }            
+            }
+            
+        }
+        function clearResult(){
+            document.getElementById("info").reset();
+            document.getElementById("result").innerHTML="";
+        }      
+    </script>  
 </body>
 </html>
